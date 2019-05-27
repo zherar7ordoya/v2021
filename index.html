@@ -7,164 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Style Workbench</title>
+    <title>Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 
 <body>
-    <header>
-        <h1>Encabezado</h1>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="{% url 'encuestas:index' %}">Home</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
 
-                <form>
-                    <input type="search" placeholder="Búsqueda">
-                    <input type="submit" value="Buscar">
-                </form>
-            </nav>
-        </div>
-    </header>
+    <h3>Gerardo Tordoya</h3>
 
-    <br>
+    <div class="tab">
+        <button class="enlace" onclick="tabular(event, 'portada')" id="predeterminada">Portada</button>
+        <button class="enlace" onclick="tabular(event, 'proyectos')">Proyectos</button>
+        <button class="enlace" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
+        <button class="enlace" onclick="tabular(event, 'clientes')">Clientes</button>
+        <button class="enlace" onclick="tabular(event, 'testimoniales')">Testimoniales</button>
+        <button class="enlace" onclick="tabular(event, 'certificaciones')">Certificaciones</button>
+        <button class="enlace" onclick="tabular(event, 'contacto')">Contacto</button>
+    </div>
 
-    <main>
-        <article>
-            <h2>Artículo</h2>
+    <div id="portada" class="contenido">
+        <p>Portada</p>
+    </div>
 
-            <p>Un desarrollador Fullstack es el encargado de manejar cada uno de los aspectos relacionados con la
-                creación y el mantenimiento de una aplicación web. Para ello es fundamental que el desarrollador
-                Fullstack tenga conocimientos en desarrollo Frontend y Backend. Además de manejar diferentes sistemas
-                operativos y lenguajes de programación.</p>
-            <p>Dicho de otra forma: El desarrollador Fullstack es un profesional todoterreno. Una pieza fundamental
-                en los departamentos de desarrollo de cualquier empresa. Conoce cómo se diseña la aplicación web
-                basándose en principios del diseño UX/UI. Y además, sabe programarla.</p>
-            <p>Teniendo en cuenta todos estos aspectos es normal que sea uno de los perfiles más demandados por las
-                empresas. El desarrollador Fullstack es capaz de establecer estrategias para cada parte del proceso de
-                desarrollo web. Esto lo convierte en una figura imprescindible en las empresas con una fuerte base
-                tecnológica.</p>
+    <div id="proyectos" class="contenido">
+        <p>
+            No olvidar de escribir el contexto de cada contexto.
+            In other words, don’t just showcase the images, or the names of what you did, or the companies you worked
+            for. Instead, focus on how you can deliver value.
+            Talk about the goals that have been reached and how your involvement made that possible. This provides a lot
+            of context and tells the person reading why the project was a success.
+        </p>
+    </div>
 
-            <h3>Sección</h3>
+    <div id="tecnologias" class="contenido">
+        <h3>Tecnologías</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
 
-            <form>
-                <label>Seleccione:</label>
-                
-                <input type="radio">Sí
-                <input type="radio">No
-                <input type="radio">Prefiero no contestar
-                <br>
-                <div>
-                    <input type="submit" value="Voto">
-                    <input type="submit" value="Voto">
-                </div>
-            </form>
+    <div id="clientes" class="contenido">
+        <h3>Clientes</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
 
-            <p>La mejor forma de introducirse en esta profesión es dominando las habilidades y los conocimientos que
-                demandan las empresas. Los nuevos modelos de negocio requieren de profesionales con conocimientos muy
-                actualizados. Por ello, la mejor opción a la hora de formarse como desarrollador Fullstack son los
-                Bootcamps.
-            </p>
+    <div id="testimoniales" class="contenido">
+        <h3>Testimoniales</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
 
-            <h3>Sección</h3>
+    <div id="certificaciones" class="contenido">
+        <h3>Certificaciones</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
 
-            <form>
-                <fieldset>
-                    <legend>
-                        <strong>Formulario</strong>
-                    </legend>
-                    <small>Descripción orientativa del objetivo de las preguntas.</small>
-                </fieldset>
+    <div id="contacto" class="contenido">
+        <h3>Contacto</h3>
+        <p>Simple Icons</p>
+        <p>Muestras en <a href="https://simpleicons.org/">Go!</a></p>
 
-                <br>
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/heroku.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/html5.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/css3.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/javascript.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/django.svg" />
 
-                <label>Nombre:</label>
-                <input type="text" placeholder="Gerardo TORDOYA" required>
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/freecodecamp.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/android.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/python.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/google.svg" />
+        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/yahoo.svg" />
+    </div>
 
-                <br>
-
-                <label>Email:</label>
-                <input type="email" placeholder="zherar7ordoya@mail.ru" required>
-
-                <br>
-
-                <label>Celular:</label>
-                <input type="tel" placeholder="+54 9 388 584-3652" required>
-
-                <br>
-
-                <label>Menú de opciones:</label>
-                <select required>
-                    <option value="" selected disabled>Opciones</option>
-                    <option>Sí</option>
-                    <option>No</option>
-                    <option>Prefiero no responder</option>
-                </select>
-
-                <br>
-                <br>
-
-                <label><strong>Una sola opción a elegir:</strong></label>
-                <div>
-                    <input type="radio" name="opcion" required>Sí
-                    <input type="radio" name="opcion" required>No
-                    <input type="radio" name="opcion" required>Prefiero no responder
-                </div>
-
-                <br>
-
-                <label><strong>Cajas de selección:</strong></label>
-                <div>
-                    <input type="checkbox">Sí
-                    <input type="checkbox">No
-                    <input type="checkbox">Prefiero no responder
-                </div>
-
-                <br>
-                <br>
-
-                <label>Comentarios:</label>
-                <textarea placeholder="Su comentario" required></textarea>
-
-                <br>
-                <br>
-
-                <div>
-                    <button type='submit'>Enviar</button>
-                    <button type='reset'>Borrar</button>
-                </div>
-            </form>
-        </article>
-
-        <br>
-
-        <aside>
-            <strong>Páginas relacionadas</strong>
-            <ul>
-                <li><a href="#">Argentina</a></li>
-                <li><a href="#">Internacional</a></li>
-                <li><a href="#">Noticias locales</a></li>
-                <li><a href="#">Negocios</a></li>
-                <li><a href="#">Ciencia y tecnología</a></li>
-                <li><a href="#">Entretenimiento</a></li>
-                <li><a href="#">Deportes</a></li>
-                <li><a href="#">Salud</a></li>
-            </ul>
-        </aside>
-    </main>
-
-    <br>
-
-    <footer>
-        <p>Desarrollado con ♡ por © Gerardo Tordoya<br>MADE IN ARGENTINA</p>
-    </footer>
 </body>
 
-
 </html>
+
+<script>
+    document.getElementById("predeterminada").click();
+</script>
