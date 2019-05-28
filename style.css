@@ -10,13 +10,13 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     line-height: 1.618;
-    max-width: 38em;
+    max-width: 39.5em;
     margin: auto;
     color: #4a4a4a;
     background-color: #f9f9f9;
-    padding: 13px;
+    padding: 10px;
 }
 
 @media (max-width: 684px) {
@@ -192,7 +192,7 @@ input[type="button"] {
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
-    background-color: #338618;
+    background-color: darkgreen;
     color: #f9f9f9;
     border-radius: 1px;
     border: 1px solid #338618;
@@ -263,4 +263,56 @@ aside {
 
 p {
     text-align: justify;
+    animation: fadeEffect 3s;
+}
+
+
+
+
+
+
+
+/* Fade in tabs */
+
+@-webkit-keyframes fadeEffect 
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect 
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+/* Style the tab content */
+
+.contenido 
+{
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 3s;
+    animation: fadeEffect 3s;
+
+    border-radius: 25px;
+    border: 1px solid mediumseagreen;
+    padding: 6px 12px;
+    
+    height: 24.9em; 
+
+}
+
+figure {
+    display: inline-block;
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+
+.svg:hover {
+    cursor: pointer;
+    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+    transition: 0.3s;
 }

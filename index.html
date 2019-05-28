@@ -16,21 +16,32 @@
 
 <body>
 
-    <h3>Gerardo Tordoya</h3>
+    <header>
 
-    <div class="tab">
-        <button class="enlace" onclick="tabular(event, 'portada')" id="predeterminada">Portada</button>
-        <button class="enlace" onclick="tabular(event, 'proyectos')">Proyectos</button>
-        <button class="enlace" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
-        <button class="enlace" onclick="tabular(event, 'clientes')">Clientes</button>
-        <button class="enlace" onclick="tabular(event, 'testimoniales')">Testimoniales</button>
-        <button class="enlace" onclick="tabular(event, 'certificaciones')">Certificaciones</button>
-        <button class="enlace" onclick="tabular(event, 'contacto')">Contacto</button>
+        <h1>Gerardo Tordoya</h1>
+
+        <nav>
+
+            <div class="tab">
+                <button class="enlace" onclick="tabular(event, 'portfolio')" id="predeterminada">Portfolio</button>
+                <button class="enlace" onclick="tabular(event, 'proyectos')">Proyectos</button>
+                <button class="enlace" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
+                <button class="enlace" onclick="tabular(event, 'certificaciones')">Certificaciones</button>
+                <button class="enlace" onclick="tabular(event, 'contacto')">Contacto</button>
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+
+    <div id="portfolio" class="contenido">
+        <p>Portada XXX-XXX-XXX</p>
     </div>
 
-    <div id="portada" class="contenido">
-        <p>Portada</p>
-    </div>
+
 
     <div id="proyectos" class="contenido">
         <p>
@@ -43,19 +54,30 @@
     </div>
 
     <div id="tecnologias" class="contenido">
-        <h3>Tecnologías</h3>
-        <p>Tokyo is the capital of Japan.</p>
+
+        <figure>
+            <img src="https://unpkg.com/simple-icons@latest/icons/heroku.svg" alt="Heroku" height="64" width="64" class="svg" />
+            <figcaption>Heroku</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://unpkg.com/simple-icons@latest/icons/html5.svg" alt="HTML5" height="64" width="64" />
+            <figcaption>HTML5</figcaption>
+        </figure>
+
+        <br>
+
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/css3.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/javascript.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/django.svg" />
+
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/freecodecamp.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/android.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/python.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/google.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/yahoo.svg" />
     </div>
 
-    <div id="clientes" class="contenido">
-        <h3>Clientes</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
-
-    <div id="testimoniales" class="contenido">
-        <h3>Testimoniales</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
 
     <div id="certificaciones" class="contenido">
         <h3>Certificaciones</h3>
@@ -67,17 +89,17 @@
         <p>Simple Icons</p>
         <p>Muestras en <a href="https://simpleicons.org/">Go!</a></p>
 
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/heroku.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/html5.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/css3.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/javascript.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/django.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/heroku.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/html5.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/css3.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/javascript.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/django.svg" />
 
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/freecodecamp.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/android.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/python.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/google.svg" />
-        <img height="128" width="128" src="https://unpkg.com/simple-icons@latest/icons/yahoo.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/freecodecamp.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/android.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/python.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/google.svg" />
+        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/yahoo.svg" />
     </div>
 
 </body>
@@ -85,5 +107,6 @@
 </html>
 
 <script>
+    document.getElementById("predeterminada").focus();
     document.getElementById("predeterminada").click();
 </script>
