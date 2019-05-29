@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- <html lang="es"> -->
 
 
 <head>
@@ -7,104 +7,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Portfolio</title>
+    <title>Gerardo Tordoya</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="icon" href="favicon.png">
+    <!-- <link rel="icon" href="powershell.svg" type="image/svg+xml" /> -->
+
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 
 <body>
-
+    <!-- |||||||||||||||||||||||||||||| HEADER |||||||||||||||||||||||||||||| -->
     <header>
+        <div style="text-align: right;">
+            <input type="radio" name="idioma" value="es" onclick="idioma()" checked>Castellano
+            <input type="radio" name="idioma" value="en" onclick="idioma()" disabled>English
+        </div>
 
-        <h1>Gerardo Tordoya</h1>
+        <h1>¡Hola Mundo!</h1>
 
         <nav>
-
-            <div class="tab">
-                <button class="enlace" onclick="tabular(event, 'portfolio')" id="predeterminada">Portfolio</button>
-                <button class="enlace" onclick="tabular(event, 'proyectos')">Proyectos</button>
-                <button class="enlace" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
-                <button class="enlace" onclick="tabular(event, 'certificaciones')">Certificaciones</button>
-                <button class="enlace" onclick="tabular(event, 'contacto')">Contacto</button>
-            </div>
-
-
+            <button class="pestaña" onclick="tabular(event, 'portfolio')" id="predeterminada">Portfolio</button>
+            <button class="pestaña" onclick="tabular(event, 'proyectos')">Proyectos</button>
+            <button class="pestaña" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
+            <button class="pestaña" onclick="tabular(event, 'certificados')">Certificados</button>
+            <button class="pestaña" onclick="tabular(event, 'contacto')">Contacto</button>
         </nav>
-
-
     </header>
 
 
-    <div id="portfolio" class="contenido">
-        <p>Portada XXX-XXX-XXX</p>
-    </div>
+    <main>
+
+        <!-- |||||||||||||||||||||||||||||| PORTFOLIO |||||||||||||||||||||||||||||| -->
+
+        <article id="portfolio" class="contenido">
+            <p>Hola. Soy Gerardo Tordoya.</p>
+        </article>
 
 
+        <!-- |||||||||||||||||||||||||||||| PROYECTOS |||||||||||||||||||||||||||||| -->
 
-    <div id="proyectos" class="contenido">
-        <p>
-            No olvidar de escribir el contexto de cada contexto.
-            In other words, don’t just showcase the images, or the names of what you did, or the companies you worked
-            for. Instead, focus on how you can deliver value.
-            Talk about the goals that have been reached and how your involvement made that possible. This provides a lot
-            of context and tells the person reading why the project was a success.
-        </p>
-    </div>
+        <article id="proyectos" class="contenido">
+            <table>
+                <tr>
+                    <th>Castellano</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>
+                        "Le dije: '¿Por qué no lo hacemos? Sólo trata de noquearme. Realmente golpéame lo más fuerte
+                        que puedas'. Y tras esa estupidez que le dije, lo siguiente que supe es que estaba en un
+                        avión de baja altitud para ir a la sala de emergencias, donde acabé en cuidados intensivos
+                        durante cuatro días con un montón de monjas a mi alrededor", contó Sly a Vulture, durante su
+                        presencia en el Festival de Cannes.
+                        <br>2do párrafo
+                        <br>3er párrafo
+                    </td>
 
-    <div id="tecnologias" class="contenido">
+                    <td>
+                        The actor also recounted the time that Lundgren nearly killed him during the filming of their
+                        big fight scene in the film. “He hit me so hard he almost stopped my heart,” he said. “I
+                        told him, ‘Why don’t we just do it? Just try to knock me out. Really cut loose as hard as
+                        you can.’ That was a really stupid thing to say. Next thing I know, I’m on a low altitude
+                        plane to the emergency room, and I’m in intensive care for four days. And there are all
+                        these nuns around.”
+                        <br>2nd paragraph
+                        <br>3rd paragraph
+                    </td>
+                </tr>
+            </table>
+        </article>
 
-        <figure>
-            <img src="https://unpkg.com/simple-icons@latest/icons/heroku.svg" alt="Heroku" height="64" width="64" class="svg" />
-            <figcaption>Heroku</figcaption>
-        </figure>
 
-        <figure>
-            <img src="https://unpkg.com/simple-icons@latest/icons/html5.svg" alt="HTML5" height="64" width="64" />
-            <figcaption>HTML5</figcaption>
-        </figure>
+        <!-- |||||||||||||||||||||||||||||| TECNOLOGIAS |||||||||||||||||||||||||||||| -->
 
+        <article id="tecnologias" class="contenido" style="text-align: center;">
+            <figure>
+                <img src="technologies/css3.svg" alt="CSS3" height="128" width="128" class="svg" />
+                <figcaption>CSS3</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/django.svg" alt="Django" height="128" width="128" class="svg" />
+                <figcaption>Django</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/electron.svg" alt="Electron" height="128" width="128" class="svg" />
+                <figcaption>Electron</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/heroku.svg" alt="Heroku" height="128" width="128" class="svg" />
+                <figcaption>Heroku</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/html5.svg" alt="HTML5" height="128" width="128" class="svg" />
+                <figcaption>HTML5</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/javascript.svg" alt="Javascript" height="128" width="128" class="svg" />
+                <figcaption>Javascript</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/mysql.svg" alt="MySQL" height="128" width="128" class="svg" />
+                <figcaption>MySQL</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/php.svg" alt="PHP" height="128" width="128" class="svg" />
+                <figcaption>PHP</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/postgresql.svg" alt="PostgreSQL" height="128" width="128" class="svg" />
+                <figcaption>PostgreSQL</figcaption>
+            </figure>
+
+            <figure>
+                <img src="technologies/python.svg" alt="Python" height="128" width="128" class="svg" />
+                <figcaption>Python</figcaption>
+            </figure>
+        </article>
+
+
+        <!-- |||||||||||||||||||||||||||||| CERTIFICADOS |||||||||||||||||||||||||||||| -->
+
+        <article id="certificados" class="contenido" style="text-align: center;">
+
+            <br>
+
+            <a href="https://www.sololearn.com/Certificate/1014-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1014-9251092.jpg" alt="HTML Fundamentals" height="217" width="307"
+                    class="svg" />
+                <figcaption>HTML Fundamentals</figcaption>
+            </a>
+
+            <a href="https://www.sololearn.com/Certificate/1023-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1023-9251092.jpg" alt="CSS Fundamentals" height="217" width="307"
+                    class="svg" />
+                <figcaption>CSS Fundamentals</figcaption>
+            </a>
+
+            <a href="https://www.sololearn.com/Certificate/1024-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1024-9251092.jpg" alt="Javascript Tutorial" height="217" width="307"
+                    class="svg" />
+                <figcaption>Javascript Tutorial</figcaption>
+            </a>
+
+            <a href="https://www.sololearn.com/Certificate/1059-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1059-9251092.jpg" alt="PHP Tutorial" height="217" width="307"
+                    class="svg" />
+                <figcaption>PHP Tutorial</figcaption>
+            </a>
+
+            <a href="https://www.sololearn.com/Certificate/1060-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1060-9251092.jpg" alt="SQL Fundamentals" height="217" width="307"
+                    class="svg" />
+                <figcaption>SQL Fundamentals</figcaption>
+            </a>
+
+            <a href="https://www.sololearn.com/Certificate/1073-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1073-9251092.jpg" alt="Python 3 Tutorial" height="217" width="307"
+                    class="svg" />
+                <figcaption>Python 3 Tutorial</figcaption>
+            </a>
+
+            <a href="https://www.sololearn.com/Certificate/1082-9251092/pdf/" target="_blank">
+                <img src="certifications/cert-1082-9251092.jpg" alt="jQuery Tutorial" height="217" width="307"
+                    class="svg" />
+                <figcaption>jQuery Tutorial</figcaption>
+            </a>
+        </article>
+
+
+        <!-- |||||||||||||||||||||||||||||| CONTACTO |||||||||||||||||||||||||||||| -->
+
+        <article id="contacto" class="contenido" style="text-align: center;">
+            <a onClick="javascript:window.open('mailto:zherar7ordoya@mail.ru', 'Mail'); event.preventDefault()"
+                href="mailto:zherar7ordoya@mail.ru">
+                <img src=" contact/mail-dot-ru.svg" alt="Email" height="256" width="256" class="svg" />
+                <figcaption>Email</figcaption>
+            </a>
+
+            <small>&emsp;</small>
+
+            <a href="https://t.me/zherar7ordoya" target="_blank">
+                <img src="contact/telegram.svg" alt="Telegram" height="256" width="256" class="svg" />
+                <figcaption>Telegram</figcaption>
+            </a>
+        </article>
+
+        <aside style="text-align: center;">
+            <small>
+                <a href="https://www.freecodecamp.org/zherar7ordoya" target="_blank">
+                    <figure>
+                        <img src="aside/freecodecamp.svg" alt="freeCodeCamp" height="32" width="32" class="svg" />
+                        <figcaption>freeCodeCamp</figcaption>
+                    </figure>
+                </a>
+
+                <small>&emsp;</small>
+
+                <a href="https://github.com/zherar7ordoya" target="_blank">
+                    <figure>
+                        <img src="aside/github.svg" alt="GitHub" height="32" width="32" class="svg" />
+                        <figcaption>GitHub</figcaption>
+                    </figure>
+                </a>
+
+                <small>&emsp;</small>
+
+                <a href="https://www.linkedin.com/in/zherar7ordoya/" target="_blank">
+                    <figure>
+                        <img src="aside/linkedin.svg" alt="LinkedIn" height="32" width="32" class="svg" />
+                        <figcaption>LinkedIn</figcaption>
+                    </figure>
+                </a>
+
+                <small>&emsp;</small>
+
+                <a href="https://stackoverflow.com/users/8411938/gerardo-tordoya?tab=profile" target="_blank">
+                    <figure>
+                        <img src="aside/stackoverflow.svg" alt="Stack Overflow" height="32" width="32" class="svg" />
+                        <figcaption>Stack Overflow</figcaption>
+                    </figure>
+                </a>
+
+                <small>&emsp;</small>
+
+                <a href="https://twitter.com/zherar7ordoya" target="_blank">
+                    <figure>
+                        <img src="aside/twitter.svg" alt="Twitter" height="32" width="32" class="svg" />
+                        <figcaption>Twitter</figcaption>
+                    </figure>
+                </a>
+            </small>
+        </aside>
+
+    </main>
+
+
+    <!-- |||||||||||||||||||||||||||||| FOOTER |||||||||||||||||||||||||||||| -->
+
+    <footer>
+        <small>Iconografía<br>
+            <a href="https://simpleicons.org/" target="_blank">
+                <figure>
+                    <img src="aside/simpleicons.svg" alt="Simple Icons" height="24" width="24" class="svg" />
+                    <figcaption>Simple Icons</figcaption>
+                </figure>
+            </a></small>
         <br>
-
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/css3.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/javascript.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/django.svg" />
-
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/freecodecamp.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/android.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/python.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/google.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/yahoo.svg" />
-    </div>
-
-
-    <div id="certificaciones" class="contenido">
-        <h3>Certificaciones</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
-
-    <div id="contacto" class="contenido">
-        <h3>Contacto</h3>
-        <p>Simple Icons</p>
-        <p>Muestras en <a href="https://simpleicons.org/">Go!</a></p>
-
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/heroku.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/html5.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/css3.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/javascript.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/django.svg" />
-
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/freecodecamp.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/android.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/python.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/google.svg" />
-        <img height="64" width="64" src="https://unpkg.com/simple-icons@latest/icons/yahoo.svg" />
-    </div>
-
+        <small>Desarrollado con ♡ por © Gerardo Tordoya<br>
+            MADE IN ARGENTINA</small>
+    </footer>
 </body>
 
 </html>
+
+
+<!-- |||||||||||||||||||||||||||||| SCRIPTS |||||||||||||||||||||||||||||| -->
 
 <script>
     document.getElementById("predeterminada").focus();

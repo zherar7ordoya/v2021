@@ -1,34 +1,23 @@
-
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+/*----------------------------------------*\
+  Desarrollado con ♡ por © Gerardo Tordoya
+\*----------------------------------------*/
 
 
-function tabular(evento, identificador) 
+function tabular(evento, identificador)
 {
-    let x, contenido, enlace;
+    let x, contenido, pestaña;
     contenido = document.getElementsByClassName("contenido");
 
-    for (x = 0; x < contenido.length; x++) 
+    for (x = 0; x < contenido.length; x++)
     {
         contenido[x].style.display = "none";
     }
 
-    enlace = document.getElementsByClassName("enlace");
+    pestaña = document.getElementsByClassName("pestaña");
 
-    for (x = 0; x < enlace.length; x++) 
+    for (x = 0; x < pestaña.length; x++)
     {
-        enlace[x].className = enlace[x].className.replace(" active", "");
+        pestaña[x].className = pestaña[x].className.replace(" active", "");
     }
 
     document.getElementById(identificador).style.display = "block";

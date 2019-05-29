@@ -1,6 +1,36 @@
+/*----------------------------------------*\
+  Desarrollado con ♡ por © Gerardo Tordoya
+\*----------------------------------------*/
 
 
-/* Body */
+/**
+ * CONTENIDO
+ *
+ * html
+ * body
+ * header
+ * nav
+ * aside
+ * footer
+ * imágenes
+ * títulos
+ * texto
+ * enlaces
+ * pre + code
+ * listas
+ * tablas
+ * formularios
+ * div + span
+ * efectos
+ * específicos
+ */
+
+
+ 
+
+/*----------------------------------------*\
+  HTML
+\*----------------------------------------*/
 
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "PT Sans", "Open Sans", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -9,13 +39,18 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
+
+/*----------------------------------------*\
+  BODY
+\*----------------------------------------*/
+
 body {
     font-size: 1.75rem;
     line-height: 1.618;
     max-width: 39.5em;
     margin: auto;
-    color: #4a4a4a;
-    background-color: #f9f9f9;
+    color: dimgrey;
+    background-color: ghostwhite;
     padding: 10px;
 }
 
@@ -30,6 +65,92 @@ body {
         font-size: 1.35rem;
     }
 }
+
+
+/*----------------------------------------*\
+  HEADER
+\*----------------------------------------*/
+
+header nav>ul {
+    font-size: 0;
+    padding: 0;
+}
+
+header nav>ul>li {
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+header nav>ul>li+li {
+    border-left: 1px solid darkgray;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+
+/*----------------------------------------*\
+  NAV
+\*----------------------------------------*/
+
+nav {
+    text-align: center;
+}
+
+
+/*----------------------------------------*\
+  ASIDE
+\*----------------------------------------*/
+
+aside {
+    margin: 0.5em 0;
+    font-style: italic;
+    color: gray;
+}
+
+
+/*----------------------------------------*\
+  FOOTER
+\*----------------------------------------*/
+
+body>footer {
+    margin-top: 5em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+    position: relative;
+}
+
+
+/*----------------------------------------*\
+  IMAGENES
+\*----------------------------------------*/
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svg {
+    filter: none;
+    transition: 2s;
+}
+
+.svg:hover {
+    cursor: pointer;
+    filter: invert(.35) drop-shadow(0px 0px 10px forestgreen);
+    transition: 1s;
+}
+
+
+/*----------------------------------------*\
+  TITULOS
+\*----------------------------------------*/
 
 h1,
 h2,
@@ -74,6 +195,16 @@ h6 {
     font-size: 1em;
 }
 
+
+/*----------------------------------------*\
+  TEXTO
+\*----------------------------------------*/
+
+p {
+    text-align: justify;
+    animation: desvanecimiento 3s;
+}
+
 small,
 sub,
 sup {
@@ -81,43 +212,39 @@ sup {
 }
 
 hr {
-    border-color: #338618;
-}
-
-a {
-    text-decoration: none;
-    color: #338618;
-}
-
-a:hover {
-    color: #5e5e5e;
-    border-bottom: 2px solid #4a4a4a;
-}
-
-ul {
-    padding-left: 1.4em;
-}
-
-li {
-    margin-bottom: 0.4em;
+    border-color: forestgreen;
 }
 
 blockquote {
     font-style: italic;
     margin-left: 1.5em;
     padding-left: 1em;
-    border-left: 3px solid #338618;
-}
-
-img {
-    max-width: 100%;
+    border-left: 3px solid forestgreen;
 }
 
 
-/* Pre and Code */
+/*----------------------------------------*\
+  ENLACES
+\*----------------------------------------*/
+
+a {
+    text-decoration: none;
+    color: forestgreen;
+    display: inline-block;
+}
+
+a:hover {
+    color: dimgrey;
+    border-bottom: 2px solid dimgrey;
+}
+
+
+/*----------------------------------------*\
+  PRE & CODE
+\*----------------------------------------*/
 
 pre {
-    background-color: #C7E3BE;
+    background-color: darkseagreen;
     display: block;
     padding: 1em;
     overflow-x: auto;
@@ -126,7 +253,7 @@ pre {
 code {
     font-size: 0.9em;
     padding: 0 0.5em;
-    background-color: #C7E3BE;
+    background-color: darkseagreen;
     white-space: pre-wrap;
 }
 
@@ -137,7 +264,22 @@ pre>code {
 }
 
 
-/* Tables */
+/*----------------------------------------*\
+  LISTAS
+\*----------------------------------------*/
+
+ul {
+    padding-left: 1.4em;
+}
+
+li {
+    margin-bottom: 0.4em;
+}
+
+
+/*----------------------------------------*\
+  TABLAS
+\*----------------------------------------*/
 
 table {
     text-align: justify;
@@ -148,8 +290,14 @@ table {
 td,
 th {
     padding: 0.5em;
-    border-bottom: 1px solid #C7E3BE;
+    border-bottom: 1px solid darkseagreen;
+    vertical-align: top;
 }
+
+
+/*----------------------------------------*\
+  FORMULARIOS
+\*----------------------------------------*/
 
 label {
     display: inline-block;
@@ -167,19 +315,14 @@ textarea {
     display: inline-block;
     vertical-align: top;
     width: 45%;
-    color: #4a4a4a;
+    color: dimgrey;
     padding: 6px 10px;
     margin-bottom: 10px;
-    background-color: #C7E3BE;
-    border: 1px solid #C7E3BE;
+    background-color: FloralWhite;
+    border: 1px solid darkseagreen;
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box
-}
-
-div {
-    text-align: center;
-    margin-top: 1em;
 }
 
 .button,
@@ -188,16 +331,17 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
-    background-color: darkgreen;
-    color: #f9f9f9;
-    border-radius: 1px;
-    border: 1px solid #338618;
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid forestgreen;
     cursor: pointer;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
 .button[disabled],
@@ -219,100 +363,56 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="button"]:focus,
 input[type="button"]:hover {
-    background-color: #5e5e5e;
-    border-color: #5e5e5e;
-    color: #f9f9f9;
+    background-color: dimgrey;
+    border-color: dimgrey;
+    color: gainsboro;
     outline: 0;
 }
 
 
-/* Header: Nav. */
+/*----------------------------------------*\
+  DIV & SPAN
+\*----------------------------------------*/
 
-header nav>ul {
-    font-size: 0;
-    padding: 0;
-}
-
-header nav>ul>li {
-    display: inline-block;
-    font-size: 1.6rem;
-}
-
-header nav>ul>li+li {
-    border-left: 1px solid #ccc;
-    margin-left: 1rem;
-    padding-left: 1rem;
-}
-
-body>footer {
-    margin-top: 5em;
-    padding-bottom: 1em;
+div {
     text-align: center;
-    font-size: 1.5rem;
-    color: #aaaaaa;
-    position: relative;
-    max-width: 50%m;
-    margin-left: 20%;
-}
-
-aside {
-    margin: 0.5em 0;
-    font-style: italic;
-    color: #aaaaaa;
-}
-
-p {
-    text-align: justify;
-    animation: fadeEffect 3s;
+    margin-top: 1em;
 }
 
 
+/*----------------------------------------*\
+  EFECTOS
+\*----------------------------------------*/
 
-
-
-
-
-/* Fade in tabs */
-
-@-webkit-keyframes fadeEffect 
-{
-  from {opacity: 0;}
-  to {opacity: 1;}
+@-webkit-keyframes desvanecimiento {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-@keyframes fadeEffect 
-{
-  from {opacity: 0;}
-  to {opacity: 1;}
+@keyframes desvanecimiento {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
-/* Style the tab content */
+/*----------------------------------------*\
+  ESPECIFICOS
+\*----------------------------------------*/
 
-.contenido 
-{
+.contenido {
     display: none;
     padding: 6px 12px;
-    -webkit-animation: fadeEffect 3s;
-    animation: fadeEffect 3s;
-
+    -webkit-animation: desvanecimiento 3s;
+    animation: desvanecimiento 2s;
     border-radius: 25px;
     border: 1px solid mediumseagreen;
     padding: 6px 12px;
-    
-    height: 24.9em; 
-
-}
-
-figure {
-    display: inline-block;
-    margin-left: auto; 
-    margin-right: auto;
-
-}
-
-.svg:hover {
-    cursor: pointer;
-    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
-    transition: 0.3s;
 }
