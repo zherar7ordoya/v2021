@@ -1,32 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- <html lang="es"> -->
 
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible-chango-catcataa" content="ie=edge">
 
     <title>Gerardo Tordoya</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/style.css">
+    <!-- <link rel="icon" href="favicon.png"> -->
+    <link rel="icon" href="favicon.svg" type="lh_image/svg+xml" />
 
-    <link rel="icon" href="favicon.png">
-    <!-- <link rel="icon" href="powershell.svg" type="image/svg+xml" /> -->
+    <script type="text/javascript" src="static/scripts/script.js"></script>
 
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 
 <body>
+
     <!-- |||||||||||||||||||||||||||||| HEADER |||||||||||||||||||||||||||||| -->
+
     <header>
+
         <div style="text-align: right;">
             <input type="radio" name="idioma" value="es" onclick="idioma()" checked>Castellano
             <input type="radio" name="idioma" value="en" onclick="idioma()" disabled>English
         </div>
 
-        <h1>¡Hola Mundo!</h1>
+        <h1>¡Hola Mundo! &#128640;</h1>
 
         <nav>
             <button class="pestaña" onclick="tabular(event, 'portfolio')" id="predeterminada">Portfolio</button>
@@ -35,6 +39,7 @@
             <button class="pestaña" onclick="tabular(event, 'certificados')">Certificados</button>
             <button class="pestaña" onclick="tabular(event, 'contacto')">Contacto</button>
         </nav>
+
     </header>
 
 
@@ -43,212 +48,498 @@
         <!-- |||||||||||||||||||||||||||||| PORTFOLIO |||||||||||||||||||||||||||||| -->
 
         <article id="portfolio" class="contenido">
-            <p>Hola. Soy Gerardo Tordoya.</p>
+            <img src="static/images/joker.jpg" alt="zherar7ordoya" height="256" width="256" class="svg"
+                style="float: right; margin: 1.5em 1em 0em;">
+            <blockquote>
+                ¿Sabes lo que soy? Soy un perro persiguiendo coches. ¡No sabría qué hacer con uno si lo atrapara! Yo
+                solo <strong>...hago cosas</strong>.
+            </blockquote>
+
+            <p>
+                Hola. Soy Gerardo Tordoya, de Argentina. Éste es mi portfolio que está más bien orientado a presentarme
+                como Desarrollador Fullstack de Aplicaciones Multiplataforma.
+            </p>
+
+            <p>Todo un título... lo sé. No que lo haya alcanzado ya, pero sinceramente creo que quien haya tenido que
+                encarar un proyecto con una nueva tecnología (una de esas que cada par de años aparece), y sentarse a
+                estudiar desde cero el lenguaje o el framework o la librería o lo que sea que demanda, coincidirá
+                conmigo en que, en realidad, aspiramos a eso que decimos que somos. El programador clásico, se inicia
+                como codificador. Y al convertirse en desarrollador, se vuelve estudiante en un aprendizaje que se
+                renueva constantemente por el rebooteo al que le fuerza cada proyecto que se le presenta o que encara.
+            </p>
+
+            <p>
+                He tratado a través de las secciones de ser sucinto pero interesante. Como lo que conversaría a lo largo
+                de una entrevista. Alguien me comentó hace un tiempo que Atahualpa Yupanqui alguna vez dijo que «El
+                artista no debe deslumbrar sino alumbrar el camino de otros». Si tuviera que resumir, diría que pretendo
+                con este porfolio «alumbrar» sobre lo que soy y para nada pretendo «deslumbrar» a nadie (que sería lo
+                mismo que enceguecerle).
+            </p>
+
+            <p style="text-align: center;">
+                <strong>
+                    ¡Ojalá que les guste mi propuesta!
+                </strong>
+                <br>
+                Gracias por visitar mi página.
+                <br>
+                <small>
+                    Actualizado Jun-2019
+                </small>
+            </p>
+
         </article>
 
 
         <!-- |||||||||||||||||||||||||||||| PROYECTOS |||||||||||||||||||||||||||||| -->
 
         <article id="proyectos" class="contenido">
-            <table>
-                <tr>
-                    <th>Castellano</th>
-                    <th>English</th>
-                </tr>
-                <tr>
-                    <td>
-                        "Le dije: '¿Por qué no lo hacemos? Sólo trata de noquearme. Realmente golpéame lo más fuerte
-                        que puedas'. Y tras esa estupidez que le dije, lo siguiente que supe es que estaba en un
-                        avión de baja altitud para ir a la sala de emergencias, donde acabé en cuidados intensivos
-                        durante cuatro días con un montón de monjas a mi alrededor", contó Sly a Vulture, durante su
-                        presencia en el Festival de Cannes.
-                        <br>2do párrafo
-                        <br>3er párrafo
-                    </td>
 
-                    <td>
-                        The actor also recounted the time that Lundgren nearly killed him during the filming of their
-                        big fight scene in the film. “He hit me so hard he almost stopped my heart,” he said. “I
-                        told him, ‘Why don’t we just do it? Just try to knock me out. Really cut loose as hard as
-                        you can.’ That was a really stupid thing to say. Next thing I know, I’m on a low altitude
-                        plane to the emergency room, and I’m in intensive care for four days. And there are all
-                        these nuns around.”
-                        <br>2nd paragraph
-                        <br>3rd paragraph
-                    </td>
-                </tr>
-            </table>
+            <h2>Portfolio</h2>
+            <img src="static/images/proyectos/portfolio.svg" alt="STATIC" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <p>
+                Sí, esto que estás viendo ahora mismo, es un proyecto también. Tal vez debería explicarme: las librerías
+                y los frameworks son recursos asombrosos. Nos ahorran tener que codificar sobre cosas que ya se han
+                hecho y probado. Hasta ahí, todo bien. Pero nos alejan del código. Yo siempre digo que codificar se
+                parece mucho a la práctica de un instrumento musical: si queremos progresar, no hay que abandonarla. Es
+                por eso que todo este portfolio está hecho "a mano", una página estática sin frameworks ni librerías ni
+                nada. El HTML es mío, como así también el CSS y el script. Es una muestra de código puro en el que,
+                obviamente, voy a seguir trabajando para mantenerlo actualizado.
+            </p>
+
+            <br>
+
+            <h2>Django</h2>
+            <img src="static/images/tecnologias/presente/django.svg" alt="DJANGO" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <p>
+                Todo el que ha se ha iniciado en Djanto conoce la aplicación de encuestas de la documentación oficial.
+                Esto es eso, nada más, nada menos, con la salvedad que yo, para comprender mejor a Django, no usé el
+                idioma inglés y tampoco seguí toda la receta sino que le fui haciendo pequeñas modificaciones. Y la idea
+                es, justamente, continuar trabajando en este proyecto a manera de banco de pruebas para seguir
+                aprendiendo. El proyecto está enlazado y desplegado en Heroku.
+            </p>
+
+            <br>
+
+            <h2>Prolog</h2>
+            <img src="static/images/proyectos/prolog.svg" alt="PROLOG" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside>
+                <small>
+                    Es más: si bien me siento orgulloso del código, siempre cruzo los dedos para nadie me pida
+                    que se lo explique porque temo darme cuenta que, ahora, pasado el tiempo, ni siquiera yo lo
+                    entiendo.
+                </small>
+            </aside>
+            <p>
+                <strong>Proyecto cerrado.</strong> Este programa fue a pedido de una institución educativa donde tomé un
+                curso. ¿Por qué lo rescato? En ese tiempo, yo consideraba que la codificación debía ser elegante y
+                abstracta. El algoritmo arroja el resultado esperado, pero es difícil de interpretarlo. Hoy ya no haría
+                algo así pues experiencias posteriores me enseñaron que si un director de proyecto permite codificación
+                de este tipo, luego debe llamar al programador que se ha ido para que traduzca un código que nadie
+                entiende. Este programa en Prolog resuelve un puzzle bastante conocido: el de las jarras de agua: dos
+                jarras de agua, una de tres litros y la otra de cinco litros. Hay que pasar agua de una a la otra (o
+                vaciarla) hasta que queden cuatro litros exactos en una de ellas. Este programa calcula todas las
+                combinaciones posibles y todas las soluciones son correctas. La solución más eficiente es la que menos
+                pasos requiere. El archivo PL del programa en GitHub.
+            </p>
+
+            <br>
+
+            <h2>Visual Basic for Applications</h2>
+            <img src="static/images/proyectos/vba.svg" alt="VBA" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <p>
+                Es un script en VBA Excel que hice para una empresa periodística. Se usa para el control de
+                publicaciones. ¿Qué es eso? Las aplicaciones editoriales capturan las tomas de avisos publicitarios,
+                las cuales luego hace fluir para generar los archivos PDF que se mandan a imprenta. De la imprenta
+                regresa lo que se conoce como el diario físico (el impreso en papel). Ésa es una simplificación de una
+                cadena más compleja que no termina ahí: en una etapa previa a facturar avisos de cuenta corriente,
+                es necesario hacer un control que consiste en verificar que la carga aplicación es lo que efectivamente
+                se ha publicado en el papel. En teoría, debería ser igual. Pero en la práctica, no es así. Este control
+                se hacía "a mano" con un índice alto de errores. Recuérdese que una empresa periodística de estas
+                características tiene un ciclo de 24 horas, luego de las cuales, el proceso se repite. Este programa
+                propone un modelo parcialmente automatizado que permite bajar la tasa de errores que se producen debido
+                al cansancio psicológico que produce en el personal a cargo de la tarea el revisar las características
+                de unas 500 publicaciones diarias (tamaño, ubicación, color, calidad, cliente, etc.). La rutina está
+                alojada en un archivo BAS en GitHub.
+            </p>
+
         </article>
 
 
         <!-- |||||||||||||||||||||||||||||| TECNOLOGIAS |||||||||||||||||||||||||||||| -->
 
         <article id="tecnologias" class="contenido" style="text-align: center;">
+
+            <blockquote>
+                Pienso que la mejor forma de presentar algunas (las mas destacables) de las tecnologías a las que me he
+                acercado sería presentarlas por periodos:
+            </blockquote>
+
+            <h2>
+                Presentes
+            </h2>
+
+            <img src="static/images/tecnologias/presente/django.svg" alt="DJANGO" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Bello es mejor que feo.</aside>
+            <p>
+                Mi último “descubrimiento” fue Django. Me hizo entender lo que es el desarrollo de aplicaciones web a
+                nivel profesional. Con Django pude disponer de un framework fullstack orientado a "hacer cosas" que me
+                permite estructurar una idea a partir de un diseño eficiente que va desde la base de datos hasta la
+                puesta en escena de esos datos.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/python.svg" alt="PYTHON" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Explícito es mejor que implícito.</aside>
+            <p>
+                Django es reflejo de algo que, simplemente, me encantó de Python, y que se puede resumir en el Zen de
+                Python. Demanda la prolijidad y claridad del código, algo que valoro mucho. Invierto tiempo codificando
+                porque amo hacerlo, y deseo que luego quede bonito, algo que en Python es un "must".
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/postgresql.svg" alt="POSTGRES" height="128" width="128"
+                class="svg" style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Simple es mejor que complejo.</aside>
+            <p>
+                A PostgreSQL lo conocí por las referencias a sus características más avanzadas. Realmente no hice un uso
+                en profundidad de PostgreSQL, pero el hecho de que Django de alguna forma se lleve tan bien con Postgres
+                ciertamente inclinó la balanza hacia una tecnología a la que le tenía ganas.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/sqlite.svg" alt="SQLITE" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Complejo es mejor que complicado.</aside>
+            <p>
+                SQLite es la opción predeterminada, de Django. Yo había oído de SQLite. Alguna vez lo usé en algún
+                proyecto PHP. Pero vi su eficacia recién cuando trabajé los modelos en Django. Aún no sé si SQLite
+                podría acompañarme en aplicaciones multi-plataforma, pero me gustaría mucho que pudiera.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/excel.svg" alt="MSEXCEL" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <img src="static/images/tecnologias/presente/access.svg" alt="MSACCESS" height="128" width="128" class="svg"
+                style="float: right; margin: 1.5em 1em 0em;">
+            <aside> Plano es mejor que anidado.</aside>
+            <p>
+                Bueno, no es raro que lo mencione. Marcaron mi regreso a la codificación (VBA). Los uso actualmente
+                porque son las herramientas que uso en mi trabajo actual: Excel es sorprendente y Access, portable.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/javascript.svg" alt="JS" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Espaciado es mejor que denso.</aside>
+            <p>
+                Javascript implica arremangarse y meter las manos en los conceptos particularmente únicos de Javascript.
+                Y eso, el entender la necesidad de una herramienta como Javascript al margen de todo de nuestros gustos
+                y disgustos para con el lenguaje, lo apunto a mi favor.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/css3.svg" alt="CSS3" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> La legibilidad es importante.</aside>
+            <p>
+                Muchas veces he tenido que aclarar que yo no soy diseñador. Y en más de una ocasión tengo que aclarar
+                eso debido a que, cuando desarrollo una aplicación, quiero que “se vea bien”. CSS3 me permite conseguir
+                eso: que la aplicación se vean bien, que es algo que valoro.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/html5.svg" alt="HTML5" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Los casos especiales no son lo suficientemente especiales como para romper las reglas.</aside>
+            <p>
+                Sinceramente, siempre me atrajo HTML. Y la propuesta semántica de HTML5 me encantó. Y ver cómo los
+                navegadores acompañan esa propuesta, me inspira a respetar el propósito con que fueron creadas sus
+                nuevas etiquetas. HTML5, sin duda, me ha permitido tener una página/cliente bien estructurada.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/heroku.svg" alt="HEROKU" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Sin embargo la practicidad le gana a la pureza.</aside>
+            <p>
+                Heroku es mi opción elegida entre competidores como Azure, Google Cloud, Amazon, etc. No he tenido en
+                mente elegir “lo mejor” sino “lo más conveniente” a mis necesidades.<br><br>
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/vscode.svg" alt="VSCODE" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Los errores nunca deberían pasar silenciosamente.</aside>
+            <p>
+                Sí, Visual Studio Community soporta Django, pero no me ha resultado tan productivo como Visual
+                Studio Code, al que he elegido por sobre otras opciones (Atom, Sublime, etc.) simplemente por
+                sentirme más a gusto con él.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/firefox.svg" alt="MOZILLA" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> A menos que se silencien explícitamente.</aside>
+            <p>
+                Entre otras cosas, es la razón por la que prefiero Firefox: su Inspector de Rejilla CSS es una
+                herramienta de gran ayuda para alguien como yo que, como dije, no posee conocimientos profundos de
+                diseño.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/presente/ubuntu.svg" alt="UBUNTU" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Frente a la ambigüedad, evitar la tentación de adivinar.</aside>
+            <p>
+                Sí, aparte de Windows, también uso Ubuntu.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+
+            <h2>Futuras</h2>
+
+            <img src="static/images/tecnologias/futuro/quasar.svg" alt="QUASAR" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Debería haber una, y preferiblemente solo una, manera obvia de hacerlo.</aside>
+            <p>
+                Cuando pienso en el futuro inmediato, pienso en el Quasar Framework, y lo pienso como la contraparte de
+                Django, como la pieza necesaria de ser un desarrollador multiplataforma. Y para eso, para darle la
+                bienvenida, es que (entre otras razones), al tener que decantarme por React Native o Vue.js, bueno, la
+                eleccion recayo sobre:
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/futuro/vue.svg" alt="VUE" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> A pesar de que esa manera no sea obvia a menos que seas Holandés.</aside>
+            <p>
+                El hecho de que Vue pueda integrarse a Django sin tener que “descabezarlo” usando el Django Rest
+                Framework es algo que, en mi caso, inclino la balanza a favor de Vue.<br><br>
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/futuro/electron.svg" alt="ELECTRON" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Ahora es mejor que nunca.</aside>
+            <p>
+                Aplicaciones Multiplataforma... Yo quisiera que fuera Proton Native, pero mientras Proton no sea una
+                tecnología madura, Electron es un "must". Ya usé Electron en el pasado, pero ahora quiero retomarlo con
+                una perspectiva nueva desde lo logrado en Django.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/futuro/react.svg" alt="REACT" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> A pesar de que nunca es muchas veces mejor que *ahora* mismo.</aside>
+            <p>
+                Simplemente, no puede desconocerse React. Tiene una integracion fluída con el Proyecto Proton, y a
+                Proton le admiro su iniciativa de hacer aplicaciones mas livianas, no descansando en un Chrome
+                descabezado (como hace Electron). Veamos lo que depara el futuro...
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/futuro/nodejs.svg" alt="NODE" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Si la implementación es difícil de explicar, es una mala idea.</aside>
+            <p>
+                Node es una exigencia de los tiempos actuales. No voy a detenerme a comentar sus bondades porque no
+                escribo esto para elogiar tecnologías, sino para recordarme la importancia de la adaptación en el mundo
+                del desarrollo. Me remito a mi comentario sobre Javascript.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/futuro/typescript.svg" alt="TS" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Si la implementación es fácil de explicar, puede que sea una buena idea.</aside>
+            <p>
+                Javascript no es fácil. Su mutismo siempre me ha resultado un dolor de cabeza. Planeo incorporar a
+                Typescript por las referencias que tengo de aporta mucho para solucionar esta característica de
+                Javascript.
+            </p>
+
+            <br>
+
+            <img src="static/images/tecnologias/futuro/mongodb.svg" alt="MONGO" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <aside> Los espacios de nombres son una gran idea, ¡tengamos más de esos! </aside>
+            <p>
+                MongoDB cae en una de esa cosas que voy a investigar solo por el hecho de que no puedo decir que no lo
+                conozco. Pero, repito, quisiera que mis conclusiones me lleven a la conclusión que no es necesario dejar
+                a un lado PostgreSQL porque hay algo que Mongo puede hacer que Postgres no puede.
+            </p>
+
+            <br>
+            <hr>
+
+            <h2>Pasadas</h2>
+
             <figure>
-                <img src="technologies/css3.svg" alt="CSS3" height="128" width="128" class="svg" />
-                <figcaption>CSS3</figcaption>
+                <img src="static/images/tecnologias/pasado/wordpress.svg" alt="WORDPRESS" height="214" width="214"
+                    class="svg" style="float: left; margin: 1.5em 1em 0em;">
+                <figcaption>WordPress</figcaption>
             </figure>
 
             <figure>
-                <img src="technologies/django.svg" alt="Django" height="128" width="128" class="svg" />
-                <figcaption>Django</figcaption>
+                <img src="static/images/tecnologias/pasado/apache.svg" alt="APACHE" height="214" width="214" class="svg"
+                    style="float: left; margin: 1.5em 1em 0em;">
+                <figcaption>Apache</figcaption>
             </figure>
 
             <figure>
-                <img src="technologies/electron.svg" alt="Electron" height="128" width="128" class="svg" />
-                <figcaption>Electron</figcaption>
+                <img src="static/images/tecnologias/pasado/jquery.svg" alt="JQUERY" height="214" width="214" class="svg"
+                    style="float: left; margin: 1.5em 1em 0em;">
+                <figcaption>jQuery</figcaption>
             </figure>
 
             <figure>
-                <img src="technologies/heroku.svg" alt="Heroku" height="128" width="128" class="svg" />
-                <figcaption>Heroku</figcaption>
-            </figure>
-
-            <figure>
-                <img src="technologies/html5.svg" alt="HTML5" height="128" width="128" class="svg" />
-                <figcaption>HTML5</figcaption>
-            </figure>
-
-            <figure>
-                <img src="technologies/javascript.svg" alt="Javascript" height="128" width="128" class="svg" />
-                <figcaption>Javascript</figcaption>
-            </figure>
-
-            <figure>
-                <img src="technologies/mysql.svg" alt="MySQL" height="128" width="128" class="svg" />
+                <img src="static/images/tecnologias/pasado/mysql.svg" alt="MYSQL" height="214" width="214" class="svg"
+                    style="float: left; margin: 1.5em 1em 0em;">
                 <figcaption>MySQL</figcaption>
             </figure>
 
-            <figure>
-                <img src="technologies/php.svg" alt="PHP" height="128" width="128" class="svg" />
-                <figcaption>PHP</figcaption>
-            </figure>
+            <img src="static/images/tecnologias/pasado/php.svg" alt="PHP" height="128" width="128" class="svg"
+                style="float: left; margin: 1.5em 1em 0em;">
+            <p>
+                A PHP le tuve un gran amor pues me permitió hacer en muy poco tiempo lo que en Javascript apenas si
+                logré luego de mucho tiempo. Yo en ese tiempo trabajaba con NetBeans, y ahí fue, tratando de arreglar
+                todos los problemas que NetBeans me señalaba, que comenzó mi desencanto.
+            </p>
 
-            <figure>
-                <img src="technologies/postgresql.svg" alt="PostgreSQL" height="128" width="128" class="svg" />
-                <figcaption>PostgreSQL</figcaption>
-            </figure>
+            <img src="static/images/tecnologias/pasado/bootstrap.svg" alt="BOOTSTRAP" height="128" width="128"
+                class="svg" style="float: left; margin: 1.5em 1em 0em;">
+            <p>
+                Simplemente no me sentí atraído tanto por Bootstrap porque no soy diseñador y, en mi visión, la de un
+                desarrollador, usar Bootstrap era usar un misil para matar un mosquito. No diré más porque Boostrap es
+                una tecnología asombrosa pero que prefiero no usar. Para mis objetivos (el desarrollo rápido) yo opto,
+                por ejemplo, por una librería classless.
+            </p>
 
-            <figure>
-                <img src="technologies/python.svg" alt="Python" height="128" width="128" class="svg" />
-                <figcaption>Python</figcaption>
-            </figure>
+            <hr>
+
+            <blockquote>
+                Esto no es todo, solo lo que pienso es lo más destacable.
+            </blockquote>
+
         </article>
 
 
         <!-- |||||||||||||||||||||||||||||| CERTIFICADOS |||||||||||||||||||||||||||||| -->
 
-        <article id="certificados" class="contenido" style="text-align: center;">
+        <article id="certificados" class="contenido">
+            <!--
+                Lamentablemente, tengo que mantener este DIV porque, de otro modo, no puedo centrar el GRID.
+                Queda pendiente el investigar la causa.
+            -->
+            <div class="contenedor1">
 
-            <br>
+                <a href="https://www.sololearn.com/Certificate/1014-9251092/pdf/" target="_blank" class="clase1">
+                    <img src="static/images/certificados/cert-1014-9251092.jpg" alt="HTML Fundamentals" width="585"
+                        height="413" class="svg" />
+                    <figcaption>HTML Fundamentals</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1014-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1014-9251092.jpg" alt="HTML Fundamentals" height="217" width="307"
-                    class="svg" />
-                <figcaption>HTML Fundamentals</figcaption>
-            </a>
+                <a href="https://www.sololearn.com/Certificate/1023-9251092/pdf/" target="_blank" class="clase2">
+                    <img src="static/images/certificados/cert-1023-9251092.jpg" alt="CSS Fundamentals" width="292"
+                        height="206" class="svg" />
+                    <figcaption>CSS Fundamentals</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1023-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1023-9251092.jpg" alt="CSS Fundamentals" height="217" width="307"
-                    class="svg" />
-                <figcaption>CSS Fundamentals</figcaption>
-            </a>
+                <a href="https://www.sololearn.com/Certificate/1024-9251092/pdf/" target="_blank" class="clase3">
+                    <img src="static/images/certificados/cert-1024-9251092.jpg" alt="Javascript Tutorial" width="292"
+                        height="206" class="svg" />
+                    <figcaption>Javascript Tutorial</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1024-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1024-9251092.jpg" alt="Javascript Tutorial" height="217" width="307"
-                    class="svg" />
-                <figcaption>Javascript Tutorial</figcaption>
-            </a>
+                <a href="https://www.sololearn.com/Certificate/1059-9251092/pdf/" target="_blank" class="clase4">
+                    <img src="static/images/certificados/cert-1059-9251092.jpg" alt="PHP Tutorial" width="585"
+                        height="413" class="svg" />
+                    <figcaption>PHP Tutorial</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1059-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1059-9251092.jpg" alt="PHP Tutorial" height="217" width="307"
-                    class="svg" />
-                <figcaption>PHP Tutorial</figcaption>
-            </a>
+                <a href="https://www.sololearn.com/Certificate/1060-9251092/pdf/" target="_blank" class="clase5">
+                    <img src="static/images/certificados/cert-1060-9251092.jpg" alt="SQL Fundamentals" width="292"
+                        height="206" class="svg" />
+                    <figcaption>SQL Fundamentals</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1060-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1060-9251092.jpg" alt="SQL Fundamentals" height="217" width="307"
-                    class="svg" />
-                <figcaption>SQL Fundamentals</figcaption>
-            </a>
+                <a href="https://www.sololearn.com/Certificate/1073-9251092/pdf/" target="_blank" class="clase6">
+                    <img src="static/images/certificados/cert-1073-9251092.jpg" alt="Python 3 Tutorial" width="292"
+                        height="206" class="svg" />
+                    <figcaption>Python 3 Tutorial</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1073-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1073-9251092.jpg" alt="Python 3 Tutorial" height="217" width="307"
-                    class="svg" />
-                <figcaption>Python 3 Tutorial</figcaption>
-            </a>
+                <a href="https://www.sololearn.com/Certificate/1082-9251092/pdf/" target="_blank" class="clase7">
+                    <img src="static/images/certificados/cert-1082-9251092.jpg" alt="jQuery Tutorial" width="585"
+                        height="413" class="svg" />
+                    <figcaption>jQuery Tutorial</figcaption>
+                </a>
 
-            <a href="https://www.sololearn.com/Certificate/1082-9251092/pdf/" target="_blank">
-                <img src="certifications/cert-1082-9251092.jpg" alt="jQuery Tutorial" height="217" width="307"
-                    class="svg" />
-                <figcaption>jQuery Tutorial</figcaption>
-            </a>
+            </div>
+
         </article>
 
 
         <!-- |||||||||||||||||||||||||||||| CONTACTO |||||||||||||||||||||||||||||| -->
 
         <article id="contacto" class="contenido" style="text-align: center;">
-            <a onClick="javascript:window.open('mailto:zherar7ordoya@mail.ru', 'Mail'); event.preventDefault()"
-                href="mailto:zherar7ordoya@mail.ru">
-                <img src=" contact/mail-dot-ru.svg" alt="Email" height="256" width="256" class="svg" />
-                <figcaption>Email</figcaption>
-            </a>
+            <!--
+                Este 2do DIV, al igual que el primero, lo necesito por razones parecidas.
+            -->
+            <div class="contenedor2">
 
-            <small>&emsp;</small>
+                <a onClick="javascript:window.open('mailto:zherar7ordoya@mail.ru', 'Mail'); event.preventDefault()"
+                    href="mailto:zherar7ordoya@mail.ru" class="clase1">
+                    <img src="static/images/contacto/mailru.svg" alt="Email" class="svg" height="256" width="256" />
+                    <figcaption>Email</figcaption>
+                </a>
 
-            <a href="https://t.me/zherar7ordoya" target="_blank">
-                <img src="contact/telegram.svg" alt="Telegram" height="256" width="256" class="svg" />
-                <figcaption>Telegram</figcaption>
-            </a>
+                <a href="https://t.me/zherar7ordoya" target="_blank" class="clase2">
+                    <img src="static/images/contacto/telegram.svg" alt="Telegram" class="svg" height="128"
+                        width="128" />
+                    <figcaption>Telegram</figcaption>
+                </a>
+
+                <small class="clase3">&#128235; zherar7ordoya@mail.ru
+                    <br>
+                    &#128241; t.me/zherar7ordoya
+                    <br>
+
+                    <strong>NOTA: </strong>si mail.ru falla... &#129300;
+                    <br>
+                    <a onClick="javascript:window.open('mailto:zherar7ordoya@yahoo.com', 'Mail'); event.preventDefault()"
+                        href="mailto:zherar7ordoya@yahoo.com">zherar7ordoya@yahoo.com</a>
+                </small>
+
+            </div>
+
         </article>
-
-        <aside style="text-align: center;">
-            <small>
-                <a href="https://www.freecodecamp.org/zherar7ordoya" target="_blank">
-                    <figure>
-                        <img src="aside/freecodecamp.svg" alt="freeCodeCamp" height="32" width="32" class="svg" />
-                        <figcaption>freeCodeCamp</figcaption>
-                    </figure>
-                </a>
-
-                <small>&emsp;</small>
-
-                <a href="https://github.com/zherar7ordoya" target="_blank">
-                    <figure>
-                        <img src="aside/github.svg" alt="GitHub" height="32" width="32" class="svg" />
-                        <figcaption>GitHub</figcaption>
-                    </figure>
-                </a>
-
-                <small>&emsp;</small>
-
-                <a href="https://www.linkedin.com/in/zherar7ordoya/" target="_blank">
-                    <figure>
-                        <img src="aside/linkedin.svg" alt="LinkedIn" height="32" width="32" class="svg" />
-                        <figcaption>LinkedIn</figcaption>
-                    </figure>
-                </a>
-
-                <small>&emsp;</small>
-
-                <a href="https://stackoverflow.com/users/8411938/gerardo-tordoya?tab=profile" target="_blank">
-                    <figure>
-                        <img src="aside/stackoverflow.svg" alt="Stack Overflow" height="32" width="32" class="svg" />
-                        <figcaption>Stack Overflow</figcaption>
-                    </figure>
-                </a>
-
-                <small>&emsp;</small>
-
-                <a href="https://twitter.com/zherar7ordoya" target="_blank">
-                    <figure>
-                        <img src="aside/twitter.svg" alt="Twitter" height="32" width="32" class="svg" />
-                        <figcaption>Twitter</figcaption>
-                    </figure>
-                </a>
-            </small>
-        </aside>
 
     </main>
 
@@ -256,18 +547,48 @@
     <!-- |||||||||||||||||||||||||||||| FOOTER |||||||||||||||||||||||||||||| -->
 
     <footer>
-        <small>Iconografía<br>
-            <a href="https://simpleicons.org/" target="_blank">
+
+        <small>
+
+            <a href="https://www.freecodecamp.org/zherar7ordoya" target="_blank">
                 <figure>
-                    <img src="aside/simpleicons.svg" alt="Simple Icons" height="24" width="24" class="svg" />
-                    <figcaption>Simple Icons</figcaption>
+                    <img src="static/images/pie_pagina/freecodecamp.svg" alt="freeCodeCamp" height="32" width="32"
+                        class="svg" />
+                    <figcaption>freeCodeCamp</figcaption>
                 </figure>
-            </a></small>
-        <br>
-        <small>Desarrollado con ♡ por © Gerardo Tordoya<br>
-            MADE IN ARGENTINA</small>
+            </a>
+
+            <a href="https://github.com/zherar7ordoya" target="_blank">
+                <figure>
+                    <img src="static/images/pie_pagina/github.svg" alt="GitHub" height="32" width="32" class="svg" />
+                    <figcaption>GitHub</figcaption>
+                </figure>
+            </a>
+
+            <a href="https://www.linkedin.com/in/zherar7ordoya/" target="_blank">
+                <figure>
+                    <img src="static/images/pie_pagina/linkedin.svg" alt="LinkedIn" height="32" width="32"
+                        class="svg" />
+                    <figcaption>LinkedIn</figcaption>
+                </figure>
+            </a>
+
+            <br>
+            <br>
+            Desarrollado con ♡ por © Gerardo Tordoya
+            <br>
+            <br>
+            <img src="static/images/pie_pagina/argentina.svg" alt="MADE IN ARGENTINA" height="50" width="80"
+                class="svg" />
+            <br>
+            MADE IN ARGENTINA
+
+        </small>
+
     </footer>
+
 </body>
+
 
 </html>
 

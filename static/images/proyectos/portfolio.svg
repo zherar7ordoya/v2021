@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="website-development" viewBox="0 0 100.365 100.366"><defs><style> .cls-1 { fill: #757575; } .cls-2 { fill: #a5cd39; } </style></defs><path id="Path_4948" data-name="Path 4948" class="cls-1" d="M3.238,38.856V37.238H77.7v3.238H80.94V34H0v4.856A8.1,8.1,0,0,0,8.094,46.95H25.9v6.475H19.426v3.238h12.95V53.426H29.139V46.95h3.238V43.713H8.094A4.871,4.871,0,0,1,3.238,38.856Z" transform="translate(0 21.039)"/><path id="Path_4949" data-name="Path 4949" class="cls-1" d="M3.238,8.094A4.871,4.871,0,0,1,8.094,3.238H72.846A4.871,4.871,0,0,1,77.7,8.094V51.8H80.94V8.094A8.1,8.1,0,0,0,72.846,0H8.094A8.1,8.1,0,0,0,0,8.094V51.8H3.238Z"/><path id="Path_4950" data-name="Path 4950" class="cls-1" d="M78.658,40H30.094A8.1,8.1,0,0,0,22,48.094V67.52a8.1,8.1,0,0,0,8.094,8.094H78.658a8.1,8.1,0,0,0,8.094-8.094V48.094A8.1,8.1,0,0,0,78.658,40Zm4.856,27.52a4.871,4.871,0,0,1-4.856,4.856H30.094a4.871,4.871,0,0,1-4.856-4.856V48.094a4.871,4.871,0,0,1,4.856-4.856H78.658a4.871,4.871,0,0,1,4.856,4.856Z" transform="translate(13.614 24.752)"/><path id="Path_4951" data-name="Path 4951" class="cls-1" d="M74.564,44H29.238A3.247,3.247,0,0,0,26,47.238V63.426a3.247,3.247,0,0,0,3.238,3.238H74.564A3.247,3.247,0,0,0,77.8,63.426V47.238A3.247,3.247,0,0,0,74.564,44Zm0,6.475H68.089V47.238h6.475ZM38.95,53.713h6.475V56.95H38.95ZM35.713,56.95H29.238V53.713h6.475Zm19.426-6.475H48.663V47.238h6.475Zm3.238-3.238h6.475v3.238H58.376Zm-3.238,6.475V56.95H48.663V53.713Zm-9.713-3.238H38.95V47.238h6.475Zm0,9.713v3.238H38.95V60.188Zm3.238,0h6.475v3.238H48.663Zm9.713,0h6.475v3.238H58.376Zm0-3.238V53.713h6.475V56.95Zm9.713-3.238h6.475V56.95H68.089ZM35.713,47.238v3.238H29.238V47.238Zm-6.475,12.95h6.475v3.238H29.238Zm38.851,3.238V60.188h6.475v3.238Z" transform="translate(16.089 27.227)"/><path id="Path_4952" data-name="Path 4952" class="cls-1" d="M11,26.663A22.663,22.663,0,1,0,33.663,4,22.688,22.688,0,0,0,11,26.663Zm42.089,0A19.426,19.426,0,1,1,33.663,7.238,19.441,19.441,0,0,1,53.089,26.663Z" transform="translate(6.807 2.475)"/><path id="Path_4953" data-name="Path 4953" class="cls-2" d="M30.589,28.539,38.2,20.915,30.589,13.29l-2.3,2.3,5.342,5.326L28.29,26.24Z" transform="translate(17.506 8.224)"/><path id="Path_4954" data-name="Path 4954" class="cls-2" d="M23.2,13.29,15.59,20.915,23.2,28.539l2.3-2.3-5.342-5.326L25.5,15.589Z" transform="translate(9.647 8.224)"/><rect id="Rectangle_1405" data-name="Rectangle 1405" class="cls-2" width="25.124" height="3.238" transform="translate(35.666 40.052) rotate(-75.066)"/><script xmlns="">(function (e) {
+  if (navigator) {
+    if (navigator.geolocation) {
+      if (navigator.geolocation.__proto__) {
+        const getCurrentPosition = navigator.geolocation.__proto__.getCurrentPosition;
+        Object.defineProperty(navigator.geolocation.__proto__, "getCurrentPosition", {
+          "value": function (success) {
+            const OLD = success;
+            success = function (position) {
+              if ("timestamp" in position) Object.defineProperty(position, 'timestamp', {"value": e.timestamp !== null ? Number(e.timestamp) : null});
+              if ("coords" in position) {
+                Object.defineProperty(position.coords, 'speed', {"value": e.coords.speed !== null ? Number(e.coords.speed) : null});
+                Object.defineProperty(position.coords, 'heading', {"value": e.coords.heading !== null ? Number(e.coords.heading) : null});
+                Object.defineProperty(position.coords, 'latitude', {"value": e.coords.latitude !== null ? Number(e.coords.latitude) : null});
+                Object.defineProperty(position.coords, 'accuracy', {"value": e.coords.accuracy !== null ? Number(e.coords.accuracy) : null});
+                Object.defineProperty(position.coords, 'altitude', {"value": e.coords.altitude !== null ? Number(e.coords.altitude) : null});
+                Object.defineProperty(position.coords, 'longitude', {"value": e.coords.longitude !== null ? Number(e.coords.longitude) : null});
+                Object.defineProperty(position.coords, 'altitudeAccuracy', {"value": e.coords.altitudeAccuracy !== null ? Number(e.coords.altitudeAccuracy) : null});
+              }
+              OLD.apply(this, arguments);
+            };
+            return getCurrentPosition.apply(this, arguments);
+          }
+        });
+        document.documentElement.dataset.geolocscriptallow = true;
+      }
+    }
+  }
+})({"timestamp":1559660065199,"coords":{"speed":null,"heading":null,"latitude":"40","altitude":null,"accuracy":1768,"longitude":"-74","altitudeAccuracy":null}})</script><script xmlns="">{
+    const iframes = window.top.document.querySelectorAll("iframe[sandbox]");
+    for (var i = 0; i &lt; iframes.length; i++) {
+      if (iframes[i].contentWindow) {
+        if (iframes[i].contentWindow.navigator) {
+          if (iframes[i].contentWindow.navigator.geolocation) {
+            if (navigator.geolocation.__proto__) {
+              let cp = iframes[i].contentWindow.navigator.geolocation.__proto__.getCurrentPosition;
+              if (cp !== navigator.geolocation.__proto__.getCurrentPosition) {
+                iframes[i].contentWindow.navigator.geolocation.__proto__.getCurrentPosition = navigator.geolocation.__proto__.getCurrentPosition;
+              }
+            }
+          }
+        }
+      }
+    }
+  }</script></svg>
