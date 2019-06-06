@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!-- <html lang="es"> -->
+<html lang="es">
 
 
 <head>
@@ -16,6 +16,19 @@
 
     <script type="text/javascript" src="static/scripts/script.js"></script>
 
+    <style>
+        /*Floating Back-To-Top Button*/
+        #myBtn {
+            position: fixed;
+            bottom: 10px;
+        }
+
+        /*On Hover Color Change*/
+        #myBtn:hover {
+            background-color: gray;
+        }
+    </style>
+
 </head>
 
 
@@ -23,22 +36,29 @@
 
     <!-- |||||||||||||||||||||||||||||| HEADER |||||||||||||||||||||||||||||| -->
 
-    <header>
 
-        <div style="text-align: right;">
-            <input type="radio" name="idioma" value="es" onclick="idioma()" checked>Castellano
-            <input type="radio" name="idioma" value="en" onclick="idioma()" disabled>English
-        </div>
 
-        <h1>¡Hola Mundo! &#128640;</h1>
+    <div style="text-align: right;">
+        <input type="radio" name="idioma" value="es" onclick="idioma()" checked>Castellano
+        <input type="radio" name="idioma" value="en" onclick="idioma()" disabled>English
+    </div>
 
-        <nav>
-            <button class="pestaña" onclick="tabular(event, 'portfolio')" id="predeterminada">Portfolio</button>
-            <button class="pestaña" onclick="tabular(event, 'proyectos')">Proyectos</button>
+    <header id="header">
+        <nav id="navbar">
+            <button class="pestaña" onclick="tabular(event, 'inicio')" id="predeterminada">Inicio</button>
+            <button class="pestaña" onclick="tabular(event, 'projects')">Proyectos</button>
             <button class="pestaña" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
             <button class="pestaña" onclick="tabular(event, 'certificados')">Certificados</button>
             <button class="pestaña" onclick="tabular(event, 'contacto')">Contacto</button>
+            <button id="myBtn" style="left: 24%;"><a href="#top">Arriba</a></button>
+            <button id="myBtn" style="right: 24%;"><a href="#bottom">Abajo </a></button>
         </nav>
+
+
+        <div id="welcome-section">
+            <h1 style="height: 75vh; display: flex; justify-content: center; align-items: center;">
+                ¡Hola Mundo! &#128640;</h1>
+        </div>
 
     </header>
 
@@ -47,7 +67,7 @@
 
         <!-- |||||||||||||||||||||||||||||| PORTFOLIO |||||||||||||||||||||||||||||| -->
 
-        <article id="portfolio" class="contenido">
+        <article id="inicio" class="contenido">
             <img src="static/images/joker.jpg" alt="zherar7ordoya" height="256" width="256" class="svg"
                 style="float: right; margin: 1.5em 1em 0em;">
             <blockquote>
@@ -93,7 +113,7 @@
 
         <!-- |||||||||||||||||||||||||||||| PROYECTOS |||||||||||||||||||||||||||||| -->
 
-        <article id="proyectos" class="contenido">
+        <article id="projects" class="contenido">
 
             <h2>Portfolio</h2>
             <img src="static/images/proyectos/portfolio.svg" alt="STATIC" height="128" width="128" class="svg"
@@ -107,6 +127,14 @@
                 nada. El HTML es mío, como así también el CSS y el script. Es una muestra de código puro en el que,
                 obviamente, voy a seguir trabajando para mantenerlo actualizado.
             </p>
+            <nav class="project-tile">
+                <ul>
+                    <li><a href="https://github.com/zherar7ordoya/zherar7ordoya.github.io" target="_blank">GitHub</a>
+                    </li>
+                    <li> <a href="https://zherar7ordoya.github.io/" target="_blank">GitHub Pages</a></li>
+                    <li><a href="http://zherar7ordoya.herokuapp.com/" target="_blank">Despliegue en Heroku</a></li>
+                </ul>
+            </nav>
 
             <br>
 
@@ -402,25 +430,25 @@
 
             <figure>
                 <img src="static/images/tecnologias/pasado/wordpress.svg" alt="WORDPRESS" height="214" width="214"
-                    class="svg" style="float: left; margin: 1.5em 1em 0em;">
+                    class="svg" style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
                 <figcaption>WordPress</figcaption>
             </figure>
 
             <figure>
                 <img src="static/images/tecnologias/pasado/apache.svg" alt="APACHE" height="214" width="214" class="svg"
-                    style="float: left; margin: 1.5em 1em 0em;">
+                    style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
                 <figcaption>Apache</figcaption>
             </figure>
 
             <figure>
                 <img src="static/images/tecnologias/pasado/jquery.svg" alt="JQUERY" height="214" width="214" class="svg"
-                    style="float: left; margin: 1.5em 1em 0em;">
+                    style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
                 <figcaption>jQuery</figcaption>
             </figure>
 
             <figure>
                 <img src="static/images/tecnologias/pasado/mysql.svg" alt="MYSQL" height="214" width="214" class="svg"
-                    style="float: left; margin: 1.5em 1em 0em;">
+                    style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
                 <figcaption>MySQL</figcaption>
             </figure>
 
@@ -550,7 +578,7 @@
 
         <small>
 
-            <a href="https://www.freecodecamp.org/zherar7ordoya" target="_blank">
+            <a href="https://www.freecodecamp.org/zherar7ordoya" target="_blank" id="profile-link">
                 <figure>
                     <img src="static/images/pie_pagina/freecodecamp.svg" alt="freeCodeCamp" height="32" width="32"
                         class="svg" />
@@ -587,6 +615,8 @@
 
     </footer>
 
+    <a name="bottom"></a>
+
 </body>
 
 
@@ -596,6 +626,17 @@
 <!-- |||||||||||||||||||||||||||||| SCRIPTS |||||||||||||||||||||||||||||| -->
 
 <script>
-    document.getElementById("predeterminada").focus();
-    document.getElementById("predeterminada").click();
+    /*
+        document.getElementById("predeterminada").focus();
+        document.getElementById("predeterminada").click();
+    */
+
+    contenido = document.getElementsByClassName("contenido");
+
+    for (x = 0; x < contenido.length; x++) {
+        contenido[x].style.display = "none";
+    }
+
 </script>
+
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>

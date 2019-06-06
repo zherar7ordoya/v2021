@@ -22,4 +22,6 @@ function tabular(evento, identificador)
 
     document.getElementById(identificador).style.display = "block";
     evento.currentTarget.className += " active";
+
+    document.getElementById("welcome-section").style.display = "none";
 }
