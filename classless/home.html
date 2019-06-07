@@ -8,45 +8,33 @@
     <title>Document</title>
 
     <style>
-        /*Floating Back-To-Top Button*/
-        #myBtn {
-            position: fixed;
-            bottom: 10px;
-            float: right;
-            right: 18.5%;
-            left: 77.25%;
-            max-width: 30px;
-            width: 100%;
-            font-size: 12px;
-            border-color: rgba(85, 85, 85, 0.2);
-            background-color: rgb(100, 100, 100);
-            padding: .5px;
-            border-radius: 4px;
+        body {
+            margin: 100px;
+            box-sizing: border-box;
         }
 
-        /*On Hover Color Change*/
-        #myBtn:hover {
-            background-color: #7dbbf1;
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: 200px;
+            grid-template-areas:
+                "a a a";
+        }
+
+        .item1 {
+            grid-area: a;
         }
     </style>
 
 </head>
 
-<body style="background-color: rgba(84,160,245,0.51)">
-    <div style="padding:15px 15px 2500px;font-size:30px">
-        <p><b>Scroll down and click the button</b></p>
-        <p>Scroll down this frame to see the effect!</p>
-        <p>Scroll Baby SCROLL!!</p>
-        <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
+<body>
+
+    <div class="wrapper">
+        <div class="item1">Item 1</div>
     </div>
-
-
-    <button id="myBtn"><a href="#top" style="color: white">Top</a></button>
-
 
 </body>
 
