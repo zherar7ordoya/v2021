@@ -2,7 +2,6 @@
   Desarrollado con ♡ por © Gerardo Tordoya
 \*----------------------------------------*/
 
-
 /**
  * CONTENIDO
  *
@@ -25,8 +24,6 @@
  * efectos
  * específicos
  */
-
-
  
 
 /*----------------------------------------*\
@@ -464,62 +461,146 @@ div {
 
 
 /*----------------------------------------*\
-  ESPECIFICOS
-\*----------------------------------------*/
-/*
-.contenido {
-    display: none;
-    padding: 6px 12px;
-    -webkit-animation: desvanecimiento 3s;
-    animation: desvanecimiento 2s;
-    border-radius: 25px;
-    border: 1px solid mediumseagreen;
-    padding: 6px 12px;
-}
-*/
-
-/*----------------------------------------*\
   REJILLA
 \*----------------------------------------*/
 
-.clase01 {
-    grid-area: area01;
+.clase01 { grid-area: area01; }
+.clase02 { grid-area: area02; }
+.clase03 { grid-area: area03; }
+.clase04 { grid-area: area04; }
+.clase05 { grid-area: area05; }
+.clase06 { grid-area: area06; }
+.clase07 { grid-area: area07; }
+.clase08 { grid-area: area08; }
+.clase09 { grid-area: area09; }
+.clase10 { grid-area: area10; }
+.clase11 { grid-area: area11; }
+.clase12 { grid-area: area12; }
+.clase13 { grid-area: area13; }
+.clase14 { grid-area: area14; }
+.clase15 { grid-area: area15; }
+.clase16 { grid-area: area16; }
+.clase17 { grid-area: area17; }
+.clase18 { grid-area: area18; }
+.clase19 { grid-area: area19; }
+.clase20 { grid-area: area20; }
+.clase21 { grid-area: area21; }
+.clase22 { grid-area: area22; }
+.clase23 { grid-area: area23; }
+.clase24 { grid-area: area24; }
+.clase25 { grid-area: area25; }
+.clase26 { grid-area: area26; }
+.clase27 { grid-area: area27; }
+.clase28 { grid-area: area28; }
+.clase29 { grid-area: area29; }
+.clase30 { grid-area: area30; }
+.clase31 { grid-area: area31; }
+.clase32 { grid-area: area32; }
+.clase33 { grid-area: area33; }
+.clase34 { grid-area: area34; }
+.clase35 { grid-area: area35; }
+.clase36 { grid-area: area36; }
+.clase37 { grid-area: area37; }
+.clase38 { grid-area: area38; }
+.clase39 { grid-area: area39; }
+.clase40 { grid-area: area40; }
+.clase41 { grid-area: area41; }
+.clase42 { grid-area: area42; }
+.clase43 { grid-area: area43; }
+.clase44 { grid-area: area44; }
+.clase45 { grid-area: area45; }
+.clase46 { grid-area: area46; }
+.clase47 { grid-area: area47; }
+.clase48 { grid-area: area48; }
+.clase49 { grid-area: area49; }
+.clase50 { grid-area: area50; }
+.clase51 { grid-area: area51; }
+.clase52 { grid-area: area52; }
+
+
+/* Portada */
+.contenedor-portada {
+    max-height: 40em;
+    display: grid;
+    height: 100vh;
+    overflow: auto;
+    /* grid-template-rows / grid-template-columns */
+    grid-template: repeat(3, 1fr) / 2fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-areas:
+        'area01 area02'
+        'area03 area03'
+        'area04 area04'
+        ;
 }
 
-.clase02 {
-    grid-area: area02;
+
+/* Proyectos */
+.contenedor-proyectos {
+    max-height: 40em;
+    display: grid;
+    height: 100vh;
+    overflow: auto;
+    /* grid-template-rows / grid-template-columns */
+    grid-template: repeat(8, 1fr) / 1fr 2fr;
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-areas:
+        'area01 area01'
+        'area02 area03'
+        'area04 area04'
+        'area05 area06'
+        'area07 area07'
+        'area08 area09'
+        'area10 area10'
+        'area11 area12'
+        ;
 }
 
-.clase03 {
-    grid-area: area03;
+
+/* Tecnologías */
+.contenedor-tecnologias {
+    max-height: 40em;
+    display: grid;
+    height: 100vh;
+    overflow: auto;
+    /* grid-template-rows / grid-template-columns */
+    grid-template: repeat(12, 1fr) / 1fr 2fr;
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-areas:
+        'area01 area02'
+        'area03 area04'
+        'area05 area06'
+        'area07 area08'
+        'area09 area10'
+        'area11 area12'
+        'area13 area14'
+        'area15 area16'
+        'area17 area18'
+        'area19 area20'
+        'area21 area22'
+        'area23 area24'
+        'area25 area26'
+        'area27 area28'
+        'area29 area30'
+        'area31 area32'
+        'area33 area34'
+        'area35 area36'
+        'area37 area38'
+        'area39 area40'
+        'area41 area42'
+        'area43 area44'
+        'area45 area46'
+        'area47 area48'
+        'area49 area50'
+        'area51 area52'
+        ;
 }
 
-.clase04 {
-    grid-area: area04;
-}
-
-.clase05 {
-    grid-area: area05;
-}
-
-.clase06 {
-    grid-area: area06;
-}
-
-.clase07 {
-    grid-area: area07;
-}
-
-.clase08 {
-    grid-area: area08;
-}
-
-.clase09 {
-    grid-area: area09;
-}
 
 /* Certificados */
-
 .contenedor-certificados {
     max-height: 40em;
     display: grid;
@@ -540,7 +621,6 @@ div {
 
 
 /* Contacto */
-
 .contenedor-contacto {
     max-height: 40em;
     display: grid;
@@ -556,15 +636,26 @@ div {
 
 
 /* Footer */
-
-.contenedor-footer {
+.contenedor-perfiles {
     max-height: 40em;
     display: grid;
     /* grid-template-rows / grid-template-columns */
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
     padding: 1em;
     grid-template-areas:
-        ' . . . area01 area02 area03 . . . '
+        ' . . . area01 . area02 . area03 . . . '
+        ;
+}
+
+.contenedor-argentina {
+    max-height: 40em;
+    display: grid;
+    /* grid-template-rows / grid-template-columns */
+    grid-template: 1fr / 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-areas:
+        ' . . . area01 . . . '
         ;
 }

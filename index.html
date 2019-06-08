@@ -3,35 +3,31 @@
 
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible-chango-catcataa" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Gerardo Tordoya</title>
-    <!-- <link rel="icon" href="favicon.png"> -->
+
     <link rel="icon" href="favicon.svg" type="lh_image/svg+xml" />
-
     <link rel="stylesheet" type="text/css" href="static/styles/style.css">
-
     <script type="text/javascript" src="static/scripts/script.js"></script>
-
 </head>
 
 
 <body>
 
-    <!-- |||||||||||||||||||||||||||||| HEADER |||||||||||||||||||||||||||||| -->
-
+    <!-- %% PENDIENTE DE IMPLEMENTACIÓN
     <aside style="text-align: right;">
         <input type="radio" name="idioma" value="es" onclick="idioma()" checked>Castellano
         <input type="radio" name="idioma" value="en" onclick="idioma()" disabled>English
     </aside>
+    %% -->
 
     <header id="header">
+        <!-- %% CABECERA %% -->
         <nav id="navbar">
-            <button class="pestaña" onclick="tabular(event, 'inicio')" id="predeterminada">&#10145; Inicio
-                &#10145;</button>
+            <button class="pestaña" onclick="tabular(event, 'portada')" id="predeterminada">Portada</button>
             <button class="pestaña" onclick="tabular(event, 'projects')">Proyectos</button>
             <button class="pestaña" onclick="tabular(event, 'tecnologias')">Tecnologias</button>
             <button class="pestaña" onclick="tabular(event, 'certificados')">Certificados</button>
@@ -40,408 +36,339 @@
             <a href="#bottom" title="Abajo" style="position: fixed; bottom: 10px; right: 25%;">&#9196;</a>
         </nav>
 
-
+        <!-- %% PÁGINA DE BIENVENIDA %% -->
         <div id="welcome-section">
-            <h1 style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+            <h1 style="height: 75vh; display: flex; justify-content: center; align-items: center;">
                 ¡Hola Mundo! &#128640;</h1>
         </div>
-
     </header>
-
-    <br>
 
 
     <main>
-
-        <!-- |||||||||||||||||||||||||||||| PORTFOLIO |||||||||||||||||||||||||||||| -->
-
-        <article id="inicio" class="contenido">
-            <img src="static/images/joker.jpg" alt="zherar7ordoya" height="256" width="256" class="svg"
-                style="float: right; margin: 1.5em 1em 0em;">
-            <blockquote>
-                ¿Sabes lo que soy? Soy un perro persiguiendo coches. ¡No sabría qué hacer con uno si lo atrapara! Yo
-                solo <strong>...hago cosas</strong>.
-            </blockquote>
-
-            <p>
-                Hola. Soy Gerardo Tordoya, de Argentina. Éste es mi portfolio que está más bien orientado a presentarme
-                como Desarrollador Fullstack de Aplicaciones Multiplataforma.
-            </p>
-
-            <p>Todo un título... lo sé. No que lo haya alcanzado ya, pero sinceramente creo que quien haya tenido que
-                encarar un proyecto con una nueva tecnología (una de esas que cada par de años aparece), y sentarse a
-                estudiar desde cero el lenguaje o el framework o la librería o lo que sea que demanda, coincidirá
-                conmigo en que, en realidad, aspiramos a eso que decimos que somos. El programador clásico, se inicia
-                como codificador. Y al convertirse en desarrollador, se vuelve estudiante en un aprendizaje que se
-                renueva constantemente por el rebooteo al que le fuerza cada proyecto que se le presenta o que encara.
-            </p>
-
-            <p>
-                He tratado a través de las secciones de ser sucinto pero interesante. Como lo que conversaría a lo largo
-                de una entrevista. Alguien me comentó hace un tiempo que Atahualpa Yupanqui alguna vez dijo que «El
-                artista no debe deslumbrar sino alumbrar el camino de otros». Si tuviera que resumir, diría que pretendo
-                con este porfolio «alumbrar» sobre lo que soy y para nada pretendo «deslumbrar» a nadie (que sería lo
-                mismo que enceguecerle).
-            </p>
-
-            <p style="text-align: center;">
-                <strong>
-                    ¡Ojalá que les guste mi propuesta!
-                </strong>
-                <br>
-                Gracias por visitar mi página.
-                <br>
-                <small>
-                    Actualizado Jun-2019
-                </small>
-            </p>
-
-        </article>
-
+        <!-- saltos de líneas para ajustar posición de cuerpo de lectura bajo el navegador en móviles -->
+        <br>
+        <br>
         <br>
 
+        <!-- %% PESTAÑA PORTADA %% -->
+        <article id="portada" class="contenido">
+            <div class="contenedor-portada">
 
-        <!-- |||||||||||||||||||||||||||||| PROYECTOS |||||||||||||||||||||||||||||| -->
+                <blockquote class="clase01" style="text-align: left;">
+                    ¿Sabes lo que soy? Soy un perro persiguiendo coches. ¡No sabría qué hacer con uno si lo atrapara! Yo
+                    solo <strong>...hago cosas</strong>.
+                </blockquote>
 
+                <img src="static/images/portada/joker.jpg" alt="zherar7ordoya" class="svg clase02">
+
+                <p class="clase03">
+                    Hola. Soy Gerardo Tordoya, de Argentina. Éste es mi portfolio que está más bien orientado a
+                    presentarme
+                    como Desarrollador Fullstack de Aplicaciones Multiplataforma.
+                    <br>
+
+                    Todo un título... lo sé. No que lo haya alcanzado ya, pero sinceramente creo que quien haya tenido
+                    que
+                    encarar un proyecto con una nueva tecnología (una de esas que cada par de años aparece), y sentarse
+                    a
+                    estudiar desde cero el lenguaje o el framework o la librería o lo que sea que demanda, coincidirá
+                    conmigo en que, en realidad, aspiramos a eso que decimos que somos. El programador clásico, se
+                    inicia
+                    como codificador. Y al convertirse en desarrollador, se vuelve estudiante en un aprendizaje que se
+                    renueva constantemente por el rebooteo al que le fuerza cada proyecto que se le presenta o que
+                    encara.
+                    <br>
+                    He tratado a través de las secciones de ser sucinto pero interesante. Como lo que conversaría a lo
+                    largo
+                    de una entrevista. Alguien me comentó hace un tiempo que Atahualpa Yupanqui alguna vez dijo que «El
+                    artista no debe deslumbrar sino alumbrar el camino de otros». Si tuviera que resumir, diría que
+                    pretendo
+                    con este porfolio «alumbrar» sobre lo que soy y para nada pretendo «deslumbrar» a nadie (que sería
+                    lo
+                    mismo que enceguecerle).
+                </p>
+
+                <p style="text-align: center;" class="clase04">
+                    <strong>
+                        ¡Ojalá que les guste mi propuesta!
+                    </strong>
+                    <br>
+                    Gracias por visitar mi página.
+                    <br>
+                    <small>
+                        Actualización 2019_06_07
+                    </small>
+                </p>
+
+            </div>
+        </article>
+
+
+        <!-- %% PESTAÑA PROYECTOS %% -->        
         <article id="projects" class="contenido">
+            <div class="contenedor-proyectos">
 
-            <h2>Portfolio</h2>
-            <img src="static/images/proyectos/portfolio.svg" alt="STATIC" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <p>
-                Sí, esto que estás viendo ahora mismo, es un proyecto también. Tal vez debería explicarme: las librerías
-                y los frameworks son recursos asombrosos. Nos ahorran tener que codificar sobre cosas que ya se han
-                hecho y probado. Hasta ahí, todo bien. Pero nos alejan del código. Yo siempre digo que codificar se
-                parece mucho a la práctica de un instrumento musical: si queremos progresar, no hay que abandonarla. Es
-                por eso que todo este portfolio está hecho "a mano", una página estática sin frameworks ni librerías ni
-                nada. El HTML es mío, como así también el CSS y el script. Es una muestra de código puro en el que,
-                obviamente, voy a seguir trabajando para mantenerlo actualizado.
-            </p>
-            <nav class="project-tile">
-                <ul>
-                    <li><a href="https://github.com/zherar7ordoya/zherar7ordoya.github.io" target="_blank">GitHub</a>
-                    </li>
-                    <li> <a href="https://zherar7ordoya.github.io/" target="_blank">GitHub Pages</a></li>
-                    <li><a href="http://zherar7ordoya.herokuapp.com/" target="_blank">Despliegue en Heroku</a></li>
-                </ul>
-            </nav>
+                <!-- %% PROYECTO PORTFOLIO %% -->
+                <div class="clase01">
+                    <h2>Portfolio</h2>
+                    <nav class="project-tile">
+                        <ul>
+                            <li><a href="https://github.com/zherar7ordoya/zherar7ordoya.github.io"
+                                    target="_blank">GitHub</a> </li>
+                            <li> <a href="https://zherar7ordoya.github.io/" target="_blank">GitHub Pages</a></li>
+                            <li><a href="http://zherar7ordoya.herokuapp.com/" target="_blank">Despliegue en Heroku</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <img src="static/images/proyectos/portfolio.svg" alt="STATIC" class="svg clase02">
+                <p class="clase03">
+                    Sí, esto que estás viendo ahora mismo, es un proyecto también. Tal vez debería explicarme: las
+                    librerías
+                    y los frameworks son recursos asombrosos. Nos ahorran tener que codificar sobre cosas que ya se
+                    han
+                    hecho y probado. Hasta ahí, todo bien. Pero nos alejan del código. Yo siempre digo que codificar
+                    se
+                    parece mucho a la práctica de un instrumento musical: si queremos progresar, no hay que
+                    abandonarla. Es
+                    por eso que todo este portfolio está hecho "a mano", una página estática sin frameworks ni
+                    librerías ni
+                    nada. El HTML es mío, como así también el CSS y el script. Es una muestra de código puro en el
+                    que,
+                    obviamente, voy a seguir trabajando para mantenerlo actualizado.
+                </p>
 
-            <br>
+                <!-- %% PROYECTO ENCUESTADORA %% -->
+                <h2 class="clase04">Django</h2>
+                <img src="static/images/tecnologias/presentes/django.svg" alt="DJANGO" class="svg clase05">
+                <p class="clase06">
+                    Todo el que ha se ha iniciado en Djanto conoce la aplicación de encuestas de la documentación
+                    oficial.
+                    Esto es eso, nada más, nada menos, con la salvedad que fui construído en castellano. Tampoco seguí
+                    toda
+                    la receta propuesta sino que le fui haciendo pequeñas modificaciones. Mi idea es la de continuar
+                    trabajando sobre este proyecto a manera de banco de pruebas para implentar nuevas funcionalidades.
+                    El
+                    proyecto está enlazado y desplegado en Heroku.
+                </p>
 
-            <h2>Django</h2>
-            <img src="static/images/tecnologias/presente/django.svg" alt="DJANGO" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <p>
-                Todo el que ha se ha iniciado en Djanto conoce la aplicación de encuestas de la documentación oficial.
-                Esto es eso, nada más, nada menos, con la salvedad que fui construído en castellano. Tampoco seguí toda
-                la receta propuesta sino que le fui haciendo pequeñas modificaciones. Mi idea es la de continuar
-                trabajando sobre este proyecto a manera de banco de pruebas para implentar nuevas funcionalidades. El
-                proyecto está enlazado y desplegado en Heroku.
-            </p>
+                <!-- %% PROYECTO JARRAS DE AGUA %% -->
+                <h2 class="clase07">Prolog</h2>
+                <img src="static/images/proyectos/prolog.svg" alt="PROLOG" class="svg clase08">
+                <p class="clase09">
+                    <strong>Proyecto cerrado.</strong> Este programa fue a pedido de una institución educativa donde
+                    tomé un
+                    curso. ¿Por qué lo rescato? En ese tiempo, yo consideraba que la codificación debía ser elegante y
+                    abstracta. El algoritmo arroja el resultado esperado, pero es difícil de interpretarlo. Hoy ya no
+                    haría
+                    algo así. Este programa en Prolog resuelve un puzzle bastante conocido: el de las jarras de agua:
+                    dos
+                    jarras de agua, una de tres litros y la otra de cinco litros. Hay que pasar agua de una a la otra (o
+                    vaciarla) hasta que queden cuatro litros exactos en una de ellas. Este programa calcula todas las
+                    combinaciones posibles y la solución más eficiente es la que menos pasos requiere.
+                    <a href="https://github.com/zherar7ordoya/Jarras" target="_blank">
+                        El archivo PL en GitHub
+                    </a>.
+                </p>
 
-            <br>
+                <!-- %% PROYECTO CONTROL PUBLICACIONES %% -->
+                <h2 class="clase10">Visual Basic for Applications</h2>
+                <img src="static/images/proyectos/vba.svg" alt="VBA" class="svg clase11">
+                <p class="clase12">
+                    Es un script en VBA Excel que hice para una empresa periodística. Se usa para el control de
+                    publicaciones. ¿Qué es eso? Las aplicaciones editoriales capturan las tomas de avisos publicitarios,
+                    las cuales luego hace fluir para generar los archivos PDF que se mandan a imprenta. De la imprenta
+                    regresa lo que se conoce como el diario físico (el impreso en papel). Luego es necesario hacer un
+                    control que consiste en verificar que la carga en la aplicación es lo que efectivamente se ha
+                    publicado
+                    en el papel. En teoría, debería ser igual. Pero en la práctica, no es así. Este control se hacía "a
+                    mano" con un índice alto de errores (recuérdese que una empresa periodística de estas
+                    características
+                    tiene un ciclo de 24 horas, luego de las cuales, el proceso se repite). Este programa propone un
+                    modelo
+                    parcialmente automatizado que permite bajar la tasa de errores que se producen debido al cansancio
+                    psicológico que produce en el personal a cargo de la tarea el revisar las características de unas
+                    500
+                    publicaciones diarias (tamaño, ubicación, color, calidad, cliente, etc.).
+                    <a href="https://github.com/zherar7ordoya/Tribuno" target="_blank">
+                        El archivo BAS en GitHub
+                    </a>.
+                </p>
 
-            <h2>Prolog</h2>
-            <img src="static/images/proyectos/prolog.svg" alt="PROLOG" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <p>
-                <strong>Proyecto cerrado.</strong> Este programa fue a pedido de una institución educativa donde tomé un
-                curso. ¿Por qué lo rescato? En ese tiempo, yo consideraba que la codificación debía ser elegante y
-                abstracta. El algoritmo arroja el resultado esperado, pero es difícil de interpretarlo. Hoy ya no haría
-                algo así. Este programa en Prolog resuelve un puzzle bastante conocido: el de las jarras de agua: dos
-                jarras de agua, una de tres litros y la otra de cinco litros. Hay que pasar agua de una a la otra (o
-                vaciarla) hasta que queden cuatro litros exactos en una de ellas. Este programa calcula todas las
-                combinaciones posibles y la solución más eficiente es la que menos pasos requiere.
-                <a href="https://github.com/zherar7ordoya/Jarras" target="_blank">
-                    El archivo PL en GitHub
-                </a>.
-            </p>
-
-            <br>
-
-            <h2>Visual Basic for Applications</h2>
-            <img src="static/images/proyectos/vba.svg" alt="VBA" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <p>
-                Es un script en VBA Excel que hice para una empresa periodística. Se usa para el control de
-                publicaciones. ¿Qué es eso? Las aplicaciones editoriales capturan las tomas de avisos publicitarios,
-                las cuales luego hace fluir para generar los archivos PDF que se mandan a imprenta. De la imprenta
-                regresa lo que se conoce como el diario físico (el impreso en papel). Luego es necesario hacer un
-                control que consiste en verificar que la carga en la aplicación es lo que efectivamente se ha publicado
-                en el papel. En teoría, debería ser igual. Pero en la práctica, no es así. Este control se hacía "a
-                mano" con un índice alto de errores (recuérdese que una empresa periodística de estas características
-                tiene un ciclo de 24 horas, luego de las cuales, el proceso se repite). Este programa propone un modelo
-                parcialmente automatizado que permite bajar la tasa de errores que se producen debido al cansancio
-                psicológico que produce en el personal a cargo de la tarea el revisar las características de unas 500
-                publicaciones diarias (tamaño, ubicación, color, calidad, cliente, etc.).
-                <a href="https://github.com/zherar7ordoya/Tribuno" target="_blank">
-                    El archivo BAS en GitHub
-                </a>.
-            </p>
-
+            </div>
         </article>
 
-        <br>
 
-
-        <!-- |||||||||||||||||||||||||||||| TECNOLOGIAS |||||||||||||||||||||||||||||| -->
-
-        <article id="tecnologias" class="contenido" style="text-align: center;">
-
+        <!-- %% PESTAÑA TECNOLOGÍAS %% -->
+        <section id="tecnologias" class="contenido" style="text-align: center;">
             <blockquote>
-                Pienso que la mejor forma de presentar algunas (las mas destacables) de las tecnologías a las que me he
-                acercado sería presentarlas por periodos:
+                Algunas de las tecnologías que he trabajado, por periodos:
             </blockquote>
+            <div class="contenedor-tecnologias">
 
-            <h2>
-                Presentes
-            </h2>
+                <!-- %% TECNOLOGÍAS PRESENTES %% -->
+                <h2 class="clase02" style="text-align: left;">
+                    Presentes
+                </h2>
 
-            <img src="static/images/tecnologias/presente/django.svg" alt="DJANGO" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Bello es mejor que feo.</aside>
-            <p>
-                Django, un framework fullstack con el que puedo desarrollar desde la base de datos hasta la "puesta en
-                escena".
-            </p>
+                <img src="static/images/tecnologias/presentes/django.svg" alt="DJANGO" class="svg clase03">
+                <p class="clase04">
+                    Django, un framework fullstack con el que puedo desarrollar desde la base de datos hasta la "puesta
+                    en
+                    escena".
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/presentes/python.svg" alt="PYTHON" class="svg clase05">
+                <p class="clase06">
+                    Django es reflejo de algo que, simplemente, me encantó de Python, y que se puede resumir en el Zen
+                    de
+                    Python.
+                </p>
 
-            <img src="static/images/tecnologias/presente/python.svg" alt="PYTHON" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Explícito es mejor que implícito.</aside>
-            <p>
-                Django es reflejo de algo que, simplemente, me encantó de Python, y que se puede resumir en el Zen de
-                Python.
-            </p>
+                <img src="static/images/tecnologias/presentes/postgresql.svg" alt="POSTGRES" class="svg clase07">
+                <p class="clase08">
+                    El hecho de que Django de alguna forma se lleve tan bien con Postgres ciertamente inclinó la balanza
+                    hacia esta tecnología.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/presentes/sqlite.svg" alt="SQLITE" class="svg clase09">
+                <p class="clase10">
+                    SQLite es la opción predeterminada de Django. Alguna vez lo usé en algún proyecto PHP. Pero recIén
+                    vi su
+                    eficacia en Django.
+                </p>
 
-            <img src="static/images/tecnologias/presente/postgresql.svg" alt="POSTGRES" height="128" width="128"
-                class="svg" style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Simple es mejor que complejo.</aside>
-            <p>
-                El hecho de que Django de alguna forma se lleve tan bien con Postgres ciertamente inclinó la balanza
-                hacia esta tecnología.
-            </p>
+                <img src="static/images/tecnologias/presentes/excel.svg" alt="MSEXCEL" class="svg clase11">
+                <p class="clase12">
+                    Fue mi regreso a la programación (VBA). Es la herramienta que uso en mi trabajo actual.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/presentes/javascript.svg" alt="JS" class="svg clase13">
+                <p class="clase14">
+                    Entender Javascript, a pesar de sus conceptos particularmente únicos, es ciertamente otro "must".
+                </p>
 
-            <img src="static/images/tecnologias/presente/sqlite.svg" alt="SQLITE" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Complejo es mejor que complicado.</aside>
-            <p>
-                SQLite es la opción predeterminada de Django. Alguna vez lo usé en algún proyecto PHP. Pero recIén vi su
-                eficacia en Django.
-            </p>
+                <img src="static/images/tecnologias/presentes/css3.svg" alt="CSS3" class="svg clase15">
+                <p class="clase16">
+                    No soy diseñador. Pero cuando desarrollo una aplicación, quiero que “se vea bien”. Y CSS3 me permite
+                    conseguir eso.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/presentes/html5.svg" alt="HTML5" class="svg clase17">
+                <p class="clase18">
+                    El concepto de la web semántica de HTML5, sin duda, me permite tener una página bien estructurada.
+                </p>
 
-            <img src="static/images/tecnologias/presente/excel.svg" alt="MSEXCEL" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <img src="static/images/tecnologias/presente/access.svg" alt="MSACCESS" height="128" width="128" class="svg"
-                style="float: right; margin: 1.5em 1em 0em;">
-            <aside> Plano es mejor que anidado.</aside>
-            <p>
-                Bueno, no es raro que lo mencione. Marcaron mi regreso a la codificación (VBA). Los uso actualmente
-                porque son las herramientas que uso en mi trabajo actual: Excel es sorprendente y Access, portable.
-            </p>
+                <img src="static/images/tecnologias/presentes/heroku.svg" alt="HEROKU" class="svg clase19">
+                <p class="clase20">
+                    Heroku es lo más conveniente a mis necesidades entre competidores como Azure, Google Cloud, Amazon,
+                    etc.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/presentes/vscode.svg" alt="VSCODE" class="svg clase21">
+                <p class="clase22">
+                    A Visual Studio Code lo he elegido por sobre otras opciones porque me ha resultado muy productivo.
+                </p>
 
-            <img src="static/images/tecnologias/presente/javascript.svg" alt="JS" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Espaciado es mejor que denso.</aside>
-            <p>
-                Entender Javascript, a pesar de sus conceptos particularmente únicos, es ciertamente otro "must".
-            </p>
+                <img src="static/images/tecnologias/presentes/firefox.svg" alt="MOZILLA" class="svg clase23">
+                <p class="clase24">
+                    Prefiero Firefox por muchas razones. Por ejemplo, el Inspector de Rejilla CSS es sorprendente.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/presentes/ubuntu.svg" alt="UBUNTU" class="svg clase25">
+                <p class="clase26">
+                    Regularmente uso Windows 10 (que me ha parecido una idea fantástica), y soy fan de Ubuntu.
+                </p>
 
-            <img src="static/images/tecnologias/presente/css3.svg" alt="CSS3" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> La legibilidad es importante.</aside>
-            <p>
-                No soy diseñador. Pero cuando desarrollo una aplicación, quiero que “se vea bien”. Y CSS3 me permite
-                conseguir eso.
-            </p>
+                <!-- %% TECNOLOGÍAS FUTURAS %% -->
+                <h2 class="clase28" style="text-align: left;">Futuras</h2>
 
-            <br>
+                <img src="static/images/tecnologias/futuras/quasar.svg" alt="QUASAR" class="svg clase29">
+                <p class="clase30">
+                    Pienso Quasar Framework como la contraparte frontend de Django para aplicaciones multiplataforma.
+                </p>
 
-            <img src="static/images/tecnologias/presente/html5.svg" alt="HTML5" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Los casos especiales no son lo suficientemente especiales como para romper las reglas.</aside>
-            <p>
-                HTML5, sin duda, me ha permitido tener una página/cliente bien estructurada.
-            </p>
+                <img src="static/images/tecnologias/futuras/vue.svg" alt="VUE" class="svg clase31">
+                <p class="clase32">
+                    Vue porque puede integrarse a Django sin tener que “descabezarlo” (usando Django Rest
+                    Framework).
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/futuras/electron.svg" alt="ELECTRON" class="svg clase33">
+                <p class="clase34">
+                    Ya usé Electron en el pasado, pero ahora quiero retomarlo con una perspectiva nueva desde lo logrado
+                    en
+                    Django.
+                </p>
 
-            <img src="static/images/tecnologias/presente/heroku.svg" alt="HEROKU" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Sin embargo la practicidad le gana a la pureza.</aside>
-            <p>
-                Heroku es lo más conveniente a mis necesidades entre competidores como Azure, Google Cloud, Amazon, etc.
-            </p>
+                <img src="static/images/tecnologias/futuras/react.svg" alt="REACT" class="svg clase35">
+                <p class="clase36">
+                    Aunque no soy un fan de React, es, simplemente, una tecnología que no puede desconocerse.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/futuras/nodejs.svg" alt="NODE" class="svg clase37">
+                <p class="clase38">
+                    Django tiene varias alternativas del lado del servidor, y Node es otro "must" que tampoco puede
+                    desconocerse.
+                </p>
 
-            <img src="static/images/tecnologias/presente/vscode.svg" alt="VSCODE" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Los errores nunca deberían pasar silenciosamente.</aside>
-            <p>
-                A Visual Studio Code lo he elegido por sobre otras opciones porque me ha resultado muy productivo.
-            </p>
+                <img src="static/images/tecnologias/futuras/typescript.svg" alt="TS" class="svg clase39">
+                <p class="clase40">
+                    Lo que espero de Typescript es que me ayude con el mutismo de Javascript que siempre me ha resultado
+                    un
+                    dolor de cabeza.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/futuras/mongodb.svg" alt="MONGO" class="svg clase41">
+                <p class="clase42">
+                    MongoDB cae en una de esa cosas que voy a investigar solo por el hecho de que no puedo decir que no
+                    lo
+                    conozco.
+                </p>
 
-            <img src="static/images/tecnologias/presente/firefox.svg" alt="MOZILLA" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> A menos que se silencien explícitamente.</aside>
-            <p>
-                Prefiero Firefox por muchas razones.<br><br><br><br>
-            </p>
+                <!-- %% TECNOLOGÍAS PASADAS %% -->
+                <h2 class="clase44" style="text-align: left;">Pasadas</h2>
 
-            <br>
+                <figure class="clase45">
+                    <img src="static/images/tecnologias/pasadas/jquery.svg" alt="JQUERY" class="svg">
+                    <figcaption>jQuery</figcaption>
+                </figure>
 
-            <img src="static/images/tecnologias/presente/ubuntu.svg" alt="UBUNTU" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Frente a la ambigüedad, evitar la tentación de adivinar.</aside>
-            <p>
-                Sí, soy fan de Ubuntu.
-            </p>
+                <figure class="clase46">
+                    <img src="static/images/tecnologias/pasadas/mysql.svg" alt="MYSQL" class="svg">
+                    <figcaption>MySQL</figcaption>
+                </figure>
 
-            <br>
-            <br>
-            <br>
-            <br>
+                <figure class="clase47">
+                    <img src="static/images/tecnologias/pasadas/wordpress.svg" alt="WORDPRESS" class="svg">
+                    <figcaption>WordPress</figcaption>
+                </figure>
 
-            <h2>Futuras</h2>
+                <figure class="clase48">
+                    <img src="static/images/tecnologias/pasadas/apache.svg" alt="APACHE" class="svg">
+                    <figcaption>Apache</figcaption>
+                </figure>
 
-            <img src="static/images/tecnologias/futuro/quasar.svg" alt="QUASAR" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Debería haber una, y preferiblemente solo una, manera obvia de hacerlo.</aside>
-            <p>
-                Pienso Quasar Framework como la contraparte frontend de Django para aplicaciones multiplataforma.
-            </p>
+                <img src="static/images/tecnologias/pasadas/php.svg" alt="PHP" class="svg clase49">
+                <p class="clase50">
+                    A PHP le tuve un gran amor pues me permitió hacer en muy poco tiempo lo que en Javascript apenas si
+                    logré luego de mucho tiempo.
+                </p>
 
-            <br>
+                <img src="static/images/tecnologias/pasadas/bootstrap.svg" alt="BOOTSTRAP" class="svg clase51">
+                <p class="clase52">
+                    Boostrap es una tecnología asombrosa, pero para mis objetivos, prefiero una librería classless.
+                </p>
 
-            <img src="static/images/tecnologias/futuro/vue.svg" alt="VUE" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> A pesar de que esa manera no sea obvia a menos que seas Holandés.</aside>
-            <p>
-                Vue porque puede integrarse a Django sin tener que “descabezarlo” (usando Django Rest
-                Framework).<br><br>
-            </p>
-
-            <br>
-
-            <img src="static/images/tecnologias/futuro/electron.svg" alt="ELECTRON" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Ahora es mejor que nunca.</aside>
-            <p>
-                Ya usé Electron en el pasado, pero ahora quiero retomarlo con una perspectiva nueva desde lo logrado en
-                Django.
-            </p>
-
-            <br>
-
-            <img src="static/images/tecnologias/futuro/react.svg" alt="REACT" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> A pesar de que nunca es muchas veces mejor que *ahora* mismo.</aside>
-            <p>
-                Simplemente, no puede desconocerse React.
-            </p>
-
-            <br>
-
-            <img src="static/images/tecnologias/futuro/nodejs.svg" alt="NODE" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Si la implementación es difícil de explicar, es una mala idea.</aside>
-            <p>
-                Node es otro "must".
-            </p>
-
-            <br>
-
-            <img src="static/images/tecnologias/futuro/typescript.svg" alt="TS" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Si la implementación es fácil de explicar, puede que sea una buena idea.</aside>
-            <p>
-                Lo que espero de Typescript es que me ayude con el mutismo de Javascript que siempre me ha resultado un
-                dolor de cabeza.
-            </p>
-
-            <br>
-
-            <img src="static/images/tecnologias/futuro/mongodb.svg" alt="MONGO" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <aside> Los espacios de nombres son una gran idea, ¡tengamos más de esos! </aside>
-            <p>
-                MongoDB cae en una de esa cosas que voy a investigar solo por el hecho de que no puedo decir que no lo
-                conozco.
-            </p>
-
-            <br>
-
-            <h2>Pasadas</h2>
-
-            <figure>
-                <img src="static/images/tecnologias/pasado/wordpress.svg" alt="WORDPRESS" height="214" width="214"
-                    class="svg" style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
-                <figcaption>WordPress</figcaption>
-            </figure>
-
-            <figure>
-                <img src="static/images/tecnologias/pasado/apache.svg" alt="APACHE" height="214" width="214" class="svg"
-                    style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
-                <figcaption>Apache</figcaption>
-            </figure>
-
-            <figure>
-                <img src="static/images/tecnologias/pasado/jquery.svg" alt="JQUERY" height="214" width="214" class="svg"
-                    style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
-                <figcaption>jQuery</figcaption>
-            </figure>
-
-            <figure>
-                <img src="static/images/tecnologias/pasado/mysql.svg" alt="MYSQL" height="214" width="214" class="svg"
-                    style="float: left; margin: 1.5em 1em 0em; max-width: 50%; height: auto;">
-                <figcaption>MySQL</figcaption>
-            </figure>
-
-            <img src="static/images/tecnologias/pasado/php.svg" alt="PHP" height="128" width="128" class="svg"
-                style="float: left; margin: 1.5em 1em 0em;">
-            <p>
-                A PHP le tuve un gran amor pues me permitió hacer en muy poco tiempo lo que en Javascript apenas si
-                logré luego de mucho tiempo.
-            </p>
-
-            <img src="static/images/tecnologias/pasado/bootstrap.svg" alt="BOOTSTRAP" height="128" width="128"
-                class="svg" style="float: left; margin: 1.5em 1em 0em;">
-            <p>
-                Boostrap es
-                una tecnología asombrosa pero que prefiero no usar porque, para mis objetivos, es como usar un misil
-                para matar un mosquito. Prefiero una librería classless.
-            </p>
-
+            </div>
             <blockquote>
                 Esto no es todo, solo lo que pienso es lo más destacable.
             </blockquote>
-
-        </article>
-
-        <br>
+        </section>
 
 
-        <!-- |||||||||||||||||||||||||||||| CERTIFICADOS |||||||||||||||||||||||||||||| -->
-
+        <!-- %% PESTAÑA CERTIFICADOS %% -->
         <article id="certificados" class="contenido">
-            <!--
-                Lamentablemente, tengo que mantener este DIV porque, de otro modo, no puedo centrar el GRID.
-                Queda pendiente el investigar la causa.
-            -->
             <div class="contenedor-certificados">
 
                 <a href="https://www.sololearn.com/Certificate/1082-9251092/pdf/" target="_blank" class="clase07">
@@ -480,34 +407,26 @@
                 </a>
 
             </div>
-
         </article>
 
-        <br>
 
-
-        <!-- |||||||||||||||||||||||||||||| CONTACTO |||||||||||||||||||||||||||||| -->
-
+        <!-- %% PESTAÑA CONTACTOS %% -->
         <article id="contacto" class="contenido" style="text-align: center;">
-            <!--
-                Este 2do DIV, al igual que el primero, lo necesito por razones parecidas.
-            -->
             <div class="contenedor-contacto">
 
-                <a onClick="javascript:window.open('mailto:zherar7ordoya@mail.ru', 'Mail'); event.preventDefault()"
-                    href="mailto:zherar7ordoya@mail.ru" class="clase01">
-                    <img src="static/images/contacto/mailru.svg" alt="Email" title="Email" class="svg" />
+                <a href="https://t.me/zherar7ordoya" target="_blank" class="clase01">
+                    <img src="static/images/contacto/telegram.svg" alt="Telegram" title="Telegram" class="svg" />
                 </a>
 
-                <a href="https://t.me/zherar7ordoya" target="_blank" class="clase02">
-                    <img src="static/images/contacto/telegram.svg" alt="Telegram" title="Telegram" class="svg" />
+                <a onClick="javascript:window.open('mailto:zherar7ordoya@mail.ru', 'Mail'); event.preventDefault()"
+                    href="mailto:zherar7ordoya@mail.ru" class="clase02">
+                    <img src="static/images/contacto/mailru.svg" alt="Email" title="Email" class="svg" />
                 </a>
 
                 <small class="clase03" style="vertical-align: middle;">&#128235; zherar7ordoya@mail.ru
                     <br>
                     &#128241; https://t.me/zherar7ordoya
                     <br>
-
                     <strong>NOTA: </strong>si mail.ru falla... &#129300;
                     <br>
                     <a onClick="javascript:window.open('mailto:zherar7ordoya@yahoo.com', 'Mail'); event.preventDefault()"
@@ -515,63 +434,56 @@
                 </small>
 
             </div>
-
         </article>
 
     </main>
 
 
-    <!-- |||||||||||||||||||||||||||||| FOOTER |||||||||||||||||||||||||||||| -->
-
+    <!-- %% PIÉ DE PÁGINA %% -->
     <footer>
 
-
-
         <small>
-
-            <div class="contenedor-footer">
+            <div class="contenedor-perfiles">
 
                 <a href="https://www.freecodecamp.org/zherar7ordoya" target="_blank" id="profile-link" class="clase01">
-                    <img src="static/images/pie_pagina/freecodecamp.svg" alt="freeCodeCamp" class="svg" />
+                    <img src="static/images/footer/freecodecamp.svg" alt="freeCodeCamp" class="svg" />
                     freeCodeCamp
                 </a>
 
                 <a href="https://github.com/zherar7ordoya" target="_blank" class="clase02">
-                    <img src="static/images/pie_pagina/github.svg" alt="GitHub" class="svg" />
+                    <img src="static/images/footer/github.svg" alt="GitHub" class="svg" />
                     <figcaption>GitHub</figcaption>
                 </a>
 
                 <a href="https://www.linkedin.com/in/zherar7ordoya/" target="_blank" class="clase03">
-                    <img src="static/images/pie_pagina/linkedin.svg" alt="LinkedIn" class="svg" />
+                    <img src="static/images/footer/linkedin.svg" alt="LinkedIn" class="svg" />
                     <figcaption>LinkedIn</figcaption>
                 </a>
 
             </div>
 
             <br>
-
             Desarrollado con ♡ por © Gerardo Tordoya
-
             <br>
 
-            <figure>
-                <img src="static/images/pie_pagina/argentina.svg" alt="MADE IN ARGENTINA" height="50" width="80"
-                    class="svg" />
-                <figcaption>MADE IN ARGENTINA</figcaption>
-            </figure>
+            <div class="contenedor-argentina">
+                <figure class="clase01">
+                    <img src="static/images/footer/argentina.svg" alt="MADE IN ARGENTINA">
+                    <figcaption>MADE IN ARGENTINA</figcaption>
+                </figure>
+            </div>
         </small>
     </footer>
 
+    <!-- %% MARCADOR DE NAVEGACIÓN INTERNA %% -->
     <a name="bottom"></a>
 
 </body>
 
-
 </html>
 
 
-<!-- |||||||||||||||||||||||||||||| SCRIPTS |||||||||||||||||||||||||||||| -->
-
+<!-- %% SCRIPTS %% -->
 <script>
 
     /*
