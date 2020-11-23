@@ -1,8 +1,8 @@
-## [Portfolio](https://zherar7ordoya.github.io/)
+# Under Construction
 
-Comentario (pendiente)
+Estoy trabajando con las ideas que harán de esta versión diametralmente diferente de todas las anteriores.
 
-**Easter Eggs**
 
- - [Bouncing!](https://zherar7ordoya.github.io/bouncing/)
- - [Slideshow!](https://zherar7ordoya.github.io/slideshow/)
+
+![Wait!](https://cdn.dribbble.com/users/32017/screenshots/4479775/dribble-stand-by-800-x-600.png)
+PLEASE STAND BY
