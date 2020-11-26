@@ -1,5 +1,11 @@
 # Documentación
 
+***[Deploy](https://zherar7ordoya.github.io/)***
+
+---
+
+## Log
+
 **2020-11-23**
 
 -   [ ] Usaré como base el esquema de
@@ -13,3 +19,7 @@
         desarrolladores.
 
 -   [ ] Otro cambio a introducir es que no usaré a Heroku como alojamiento.
+
+---
+
+> Made with 🧡 by Gerardo Tordoya
