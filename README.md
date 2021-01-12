@@ -28,7 +28,9 @@
 - **Generador de Meta Tags:** ➡️ [miarroba](https://metatags.miarroba.com/)
 - **Simple Icons:** ➡️  [SimpleIcons.org](https://simpleicons.org/)
 - **Imagen:** ➡️  [(In)Humanity](https://electricathenaeum.com/2019/08/13/inhumanity/)
-
+- **Imagen:** ➡️  [Algorithm](https://dribbble.com/shots/5819252-Machine-Learning-Algorithm)
+- **Imagen:** ➡️  [Rubik](http://universo.math.org.mx/2016-1/Rubik/rubikfiguras/)
+- **Card with Space Theme:** ➡️  [CodePen](https://codepen.io/faelplg/pen/MWwxred)
 ---
 
                     ✨ Made with 🧡 by Gerardo⭐Tordoya in 🇦🇷
