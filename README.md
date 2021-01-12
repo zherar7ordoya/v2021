@@ -6,6 +6,8 @@
 
 -   [x] Otro cambio a introducir es que no usaré a Heroku como alojamiento.
 
+-   [x] Simplificar el redireccionamiento (no usar DNS).
+
 -   [ ] No olvidar créditos.
 
 -   [ ] Usaré como base el esquema de
