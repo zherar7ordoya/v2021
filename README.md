@@ -4,6 +4,19 @@
 
 ---
 
+## Comentarios
+
+Inicié este proyecto con la idea de mente de aplicar a un caso concreto todo ese
+camino que va desde el maquetado hasta el despliegue.
+Cosa rara. El hacer un resumé se ha convertido en un desafío pues, como decimos
+en Argentina, "pongo toda la carne en la parrilla". Es decir, siempre he tratado
+de que un documento tan significativo diga mucho simplemente por la forma en que
+está hecho.
+Pero en esta ocasión, hacerlo esta vez me ha puesto a reflexionar...
+
+
+---
+
 -   [x] Otro cambio a introducir es que no usaré a Heroku como alojamiento.
 
 -   [x] Simplificar el redireccionamiento (no usar DNS).
@@ -24,13 +37,13 @@
 
 ## Créditos
 
--   **Portfolio-Template:** ➡️ [Prateek Mishra](https://github.com/0xPrateek/Portfolio-Template).
-- **Generador de Meta Tags:** ➡️ [miarroba](https://metatags.miarroba.com/)
-- **Simple Icons:** ➡️  [SimpleIcons.org](https://simpleicons.org/)
-- **Imagen:** ➡️  [(In)Humanity](https://electricathenaeum.com/2019/08/13/inhumanity/)
-- **Imagen:** ➡️  [Algorithm](https://dribbble.com/shots/5819252-Machine-Learning-Algorithm)
-- **Imagen:** ➡️  [Rubik](http://universo.math.org.mx/2016-1/Rubik/rubikfiguras/)
-- **Card with Space Theme:** ➡️  [CodePen](https://codepen.io/faelplg/pen/MWwxred)
+- **Plantilla:** ➡️ [Prateek Mishra](https://github.com/0xPrateek/Portfolio-Template).
+- **Tags:**      ➡️ [miarroba](https://metatags.miarroba.com/)
+- **Icons:**     ➡️  [SimpleIcons.org](https://simpleicons.org/)
+- **Imagen:**    ➡️  [(In)Humanity](https://electricathenaeum.com/2019/08/13/inhumanity/)
+- **Imagen:**    ➡️  [Algorithm](https://dribbble.com/shots/5819252-Machine-Learning-Algorithm)
+- **Imagen:**    ➡️  [Rubik](http://universo.math.org.mx/2016-1/Rubik/rubikfiguras/)
+- **Tarjeta:**   ➡️  [CodePen](https://codepen.io/faelplg/pen/MWwxred)
 ---
 
                     ✨ Made with 🧡 by Gerardo⭐Tordoya in 🇦🇷

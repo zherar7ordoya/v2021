@@ -71,7 +71,7 @@ body {
 
   -moz-perspective: 200rem;
   perspective: 200rem;
-  margin: 2rem;
+  margin: 0.5rem;
 }
 .card__side {
   height: 16rem;
