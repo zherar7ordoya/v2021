@@ -1,4 +1,6 @@
 /* Reset */
+
+/*
 *,
 *::after,
 *::before {
@@ -30,6 +32,8 @@ body {
   height: 100vh;
   background-color: #ece0e8;
 }
+*/
+
 
 .artboard {
   /*
@@ -39,12 +43,12 @@ body {
   /* INICIA CAMBIO */
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   /* FINALIZA CAMBIO */
 
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+
   height: 100%;
   position: relative;
 }
@@ -62,15 +66,15 @@ body {
   width: 48rem;
   */
 
-  width: 24rem;
-  height: 32rem;
+  width: 12rem;
+  height: 16rem;
 
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin: 2rem;
 }
 .card__side {
-  height: 32rem;
+  height: 16rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -86,7 +90,8 @@ body {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65),#59BD85), url(../images/algorithm.gif);
 }
 .card__side--back {
   background-color: #fff;
@@ -113,29 +118,29 @@ body {
 }
 .card__subject {
   font-family: "Inconsolata", monospace;
-  letter-spacing: 0.8rem;
-  font-size: 1.5rem;
+  
+  font-size: 1rem;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
 }
 .card__title {
   font-family: "VT323", monospace;
   text-transform: uppercase;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 100;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  
+  margin-bottom: 2rem;
 }
 .card__cover {
   position: relative;
   background-size: cover;
-  height: 14rem;
+  height: 7rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), #59BD85), url(../images/floor.jpg);
 }
 .card__heading {
   text-align: center;
@@ -149,7 +154,7 @@ body {
 
 .card__heading-span {
   font-family: "VT323", monospace;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   text-transform: uppercase;
   padding: 0.5rem 0.5rem;
@@ -173,7 +178,7 @@ body {
 
 .card__details {
   font-family: "Inconsolata", monospace;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 .card__details ul {
   list-style: none;
@@ -182,8 +187,8 @@ body {
 }
 .card__details ul li {
   text-align: center;
-  font-size: 1.8rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.25rem;
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;

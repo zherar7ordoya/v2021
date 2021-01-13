@@ -575,7 +575,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: .3em;
-  color: #fff;
+  color: white;
 }
 
 .info h2, #header h2 {
@@ -585,9 +585,16 @@ body {
   margin-top: 0.5em;
 }
 
-.info h4, #header h4 {
-  color: #59BD85;
+.info h4 {
+   /* color: #59BD85; */
+  color:#2E8B57;
   margin-bottom: 2em;
+}
+
+#header h4 {
+ color: #59BD85; 
+
+ margin-bottom: 2em;
 }
 
 .info h6, #header h6 {
@@ -619,7 +626,7 @@ body {
 }
 
 .main-links ul li a {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Icon Styling */
@@ -846,14 +853,22 @@ body {
   grid-gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .project-container,
 .certificate-container {
   max-width: 240px;
   border-radius: 5px;
-  background-color: #5cb85c;
-  color: #fff;
+  /* background-color: #5cb85c; */
+  
+  /*background-color: #59BD85;*/
+
+  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65),#59BD85), url(../images/diploma.jpg);
+
+
+  /*color: #fff;*/
   cursor: pointer;
   box-shadow: 2px 2px 5px 3px #5cb85c27;
 }
