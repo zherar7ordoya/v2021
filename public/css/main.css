@@ -577,6 +577,10 @@ body {
   width: 100%;
 }
 
+.info {
+  margin-top: 3em;
+}
+
 .info h1, #header h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -627,8 +631,9 @@ body {
 }
 
 .main-links ul li {
-  border-bottom: 1px solid #F1F1F1;
-  padding: 10px 0;
+  border-bottom: 1px solid rgb(0, 178, 153);
+  padding: 12px 0;
+  border-top: 1px solid rgb(0, 178, 153);
 }
 
 .main-links ul li a {
@@ -648,6 +653,7 @@ body {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  margin: 50px 0px 50px 0;
 }
 
 .item-box i {
@@ -1137,7 +1143,8 @@ Change widths as necessary
   /* Sidebar */
   .sidebar {
     padding-left: 20px;
-    border-left: 1px solid #f1f1f1;
+    border-left: 1px solid rgb(250,77,26);
+    margin-top: 55px;
   }
 
   /* COLUMN GRID */
