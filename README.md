@@ -43,4 +43,4 @@ Así que, en cuanto termine esta propuesta, me voy a poner manos a la obra en la
 
 ---
 
-                    ✨ Made with 🧡 by Gerardo⭐Tordoya in 🇦🇷
+<p align="center">✨ Made with 🧡 by Gerardo⭐Tordoya in 🇦🇷<p>
