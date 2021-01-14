@@ -1,13 +1,19 @@
-import Head from "next/head";
+
+// import Head from "next/head";
 import styles from "../styles/Home.module.css";
+
+import SEO from "../components/SEO"
 
 export default function Home() {
     return (
         <div className={styles.container}>
+            <SEO />
+            {/*
             <Head>
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
+            */}
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
@@ -77,3 +83,4 @@ export default function Home() {
         </div>
     );
 }
+
