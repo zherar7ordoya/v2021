@@ -2,7 +2,7 @@
 
 ## 🚨 AVISO 🚨
 
-**PROYECTO ABORTADO:** Lo reconozco, fue mi error.
+**SOLUCIÓN ABORTADA:** Lo reconozco, fue mi error.
 
 Yo había calculado que no iba a tener interferencia con jQuery pues no estaba llamando a esta librería para algo crítico. Pero jQuery, en su corazón, en algún momento va a querer comunicarse con el DOM. Ahora lo sé. Es decir, calculé mal.
 Hay una [solución](https://github.com/tudorgergely/jquery-plugin-nextjs) propuesta por [tudor.gergely](https://stackoverflow.com/a/61040108), pero como se podrá ver, es sucia, y que así, es justamente el tipo de parches a los que rechazo.
