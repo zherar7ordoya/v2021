@@ -12,14 +12,17 @@ Así que, en cuanto termine esta propuesta, me voy a poner manos a la obra en la
 ## Bitácora
 
 - **SEO (search engine optimization: posicionamiento en buscadores, optimización en motores de búsqueda):** Originalmente, me había decantado por una [librería](https://github.com/garmeeh/next-seo) que, en la mayor parte de los casos, ya es una solución [probada](https://codesandbox.io/s/3194op0r6m). Sin embargo, esta opción no es viable: si bien las instrucciones del repositorio han sido actualizadas hace un par de meses, el ejemplo que encontré (y que sigue fielmente a ese texto) usa la versión 7.0.2 de NextJS, y en esta (la 10.0.4) NextJS me señala errores en la librería. La solución de [St_Mute](https://stackoverflow.com/a/55849835/14009797), que es muy parecida, tiene problemas parecidos también. FINALMENTE Flavio Copes vino al rescate una vez más: [la solución que funcionó](https://www.freecodecamp.org/news/the-next-js-handbook/#populating-the-head-tag-with-custom-tags).
+- **Contenedor (Wrapper) para BODY:** La plantilla tiene una clase CSS para BODY. La verdad, no había enfrentado nunca una cosa así. He tomado la solución de [Sebastien Lorber](https://stackoverflow.com/a/31757397/14009797) por haber resultado efectiva al primer intento, lo cual me lleva a dilucidar con más claridad lo que hacen los CHILDREN en ReactJS. Lo agrego a pendientes.
 
 ---
 
-## TODO
+## Pendientes
 
 - [x] Otro cambio a introducir es que no usaré a Heroku como alojamiento.
 
 - [x] Simplificar el redireccionamiento (no usar DNS).
+
+- [ ] El uso de los CHILDREN.
 
 - [ ] No olvidar créditos.
 

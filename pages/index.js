@@ -1,19 +1,38 @@
 
 // import Head from "next/head";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
+import * as React from 'react'
 import SEO from "../components/SEO"
+import Body from "../components/Body"
+import Header from "../components/Header"
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <React.Fragment>
             <SEO />
-            {/*
+
+            <Body>
+                <Header />
+
+                <blockquote>Read my lips, motherfucker, you cannot talk to me like that!</blockquote>
+
+            </Body>
+        </React.Fragment>
+    );
+}
+
+/*
+export default function Home() {
+    return (
+        <div className={styles.container}>
+
+
             <Head>
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            */}
+
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
@@ -84,3 +103,4 @@ export default function Home() {
     );
 }
 
+*/
